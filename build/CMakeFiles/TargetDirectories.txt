@@ -1,0 +1,3 @@
+A:/Gamer-Deedz-Engine/build/CMakeFiles/GameEngine.dir
+A:/Gamer-Deedz-Engine/build/CMakeFiles/edit_cache.dir
+A:/Gamer-Deedz-Engine/build/CMakeFiles/rebuild_cache.dir
