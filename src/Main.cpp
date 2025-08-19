@@ -1,7 +1,7 @@
 #include <SFML/Graphics.hpp>
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(800, 600), "Game Engine Test");
+    sf::RenderWindow window(sf::VideoMode(800, 600), "Gamer Deedz Engine");
 
     while (window.isOpen()) {
         sf::Event event;
