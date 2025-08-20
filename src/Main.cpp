@@ -1,8 +1,11 @@
+#include <InputManager.hpp>
 #include <SFML/Graphics.hpp>
 
 int main() {
     sf::RenderWindow window(sf::VideoMode(800, 600), "Gamer Deedz Engine");
 
+    InputManager input;
+    
     while (window.isOpen()) {
         sf::Event event;
         while (window.pollEvent(event)) {
@@ -10,8 +13,14 @@ int main() {
                 window.close();
         }
 
+        input.update();
+
         window.clear(sf::Color::Black);
         window.display();
     }
+
+    
+
+
     return 0;
 }
