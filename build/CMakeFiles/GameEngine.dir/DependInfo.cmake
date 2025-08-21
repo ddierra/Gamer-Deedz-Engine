@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "A:/Gamer-Deedz-Engine/src/main.cpp" "CMakeFiles/GameEngine.dir/src/main.cpp.obj" "gcc" "CMakeFiles/GameEngine.dir/src/main.cpp.obj.d"
+  "A:/Gamer-Deedz-Engine/src/Main.cpp" "CMakeFiles/GameEngine.dir/src/main.cpp.obj" "gcc" "CMakeFiles/GameEngine.dir/src/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

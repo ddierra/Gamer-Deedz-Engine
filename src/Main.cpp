@@ -1,4 +1,4 @@
-#include <InputManager.hpp>
+#include "InputManager.hpp"
 #include <SFML/Graphics.hpp>
 
 int main() {
