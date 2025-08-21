@@ -13,7 +13,7 @@ int main() {
                 window.close();
         }
 
-        input.update();
+        input.update(window);
 
         window.clear(sf::Color::Black);
         window.display();

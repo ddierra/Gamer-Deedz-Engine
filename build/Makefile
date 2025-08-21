@@ -128,6 +128,30 @@ GameEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/build
 .PHONY : GameEngine/fast
 
+src/InputManager.obj: src/InputManager.cpp.obj
+.PHONY : src/InputManager.obj
+
+# target to build an object file
+src/InputManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj
+.PHONY : src/InputManager.cpp.obj
+
+src/InputManager.i: src/InputManager.cpp.i
+.PHONY : src/InputManager.i
+
+# target to preprocess a source file
+src/InputManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/InputManager.cpp.i
+.PHONY : src/InputManager.cpp.i
+
+src/InputManager.s: src/InputManager.cpp.s
+.PHONY : src/InputManager.s
+
+# target to generate assembly for a file
+src/InputManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/InputManager.cpp.s
+.PHONY : src/InputManager.cpp.s
+
 src/Main.obj: src/Main.cpp.obj
 .PHONY : src/Main.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... GameEngine
+	@echo ... src/InputManager.obj
+	@echo ... src/InputManager.i
+	@echo ... src/InputManager.s
 	@echo ... src/Main.obj
 	@echo ... src/Main.i
 	@echo ... src/Main.s

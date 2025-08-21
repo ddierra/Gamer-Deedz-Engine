@@ -1,5 +1,5 @@
-CMakeFiles/GameEngine.dir/src/Main.cpp.obj: \
- A:\Gamer-Deedz-Engine\src\Main.cpp \
+CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj: \
+ A:\Gamer-Deedz-Engine\src\InputManager.cpp \
  A:\Gamer-Deedz-Engine\src\InputManager.hpp \
  C:/msys64/mingw64/include/SFML/Window.hpp \
  C:/msys64/mingw64/include/SFML/System.hpp \

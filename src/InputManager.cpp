@@ -1,79 +1,82 @@
 #include "InputManager.hpp"
 #include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
 
-void InputManager::update() {
+void InputManager::update(sf::RenderWindow& window) {
     // Update input states if necessary
 
-    switch (sf::Keyboard::Unknown)
-    {
-    case sf::Keyboard::Escape:
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
         std::cout << "Escape key is pressed." << std::endl;
-        break;
-    case sf::Keyboard::A:
+    }
+
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
         std::cout << "A key is pressed." << std::endl;
-        break;
+    }
 
-    case sf::Keyboard::D:
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
         std::cout << "D key is pressed." << std::endl;
-        break;
-    
-    case sf::Keyboard::W:
+    }
+
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
         std::cout << "W key is pressed." << std::endl;
-        break;
-    
-    case sf::Keyboard::S:
+    }
+
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
         std::cout << "S key is pressed." << std::endl;
-        break;
+    }
 
-    case sf::Keyboard::Space:
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
         std::cout << "Space key is pressed." << std::endl;
-        break;
-    
-    case sf::Keyboard::Enter:
+    } 
+
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Enter)) {
         std::cout << "Enter key is pressed." << std::endl;
-        break;
+    }   
 
-    case sf::Keyboard::Left:
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
         std::cout << "Left Arrow key is pressed." << std::endl;
-        break;
+    } 
 
-    case sf::Keyboard::Right:
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
         std::cout << "Right Arrow key is pressed." << std::endl;
-        break;
+    }
 
-    case sf::Keyboard::Up:
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
         std::cout << "Up Arrow key is pressed." << std::endl;
-        break;
+    }
 
-    case sf::Keyboard::Down:
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
         std::cout << "Down Arrow key is pressed." << std::endl;
-        break;
-        
-    default:
-        break;
+    }
+
+    if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
+        sf::Vector2i pos = sf::Mouse::getPosition(window);
+        std::cout << "Left mouse presssed at position: " 
+                  << pos.x << ", " << pos.y << std::endl;
+    }
+
+    if (sf::Mouse::isButtonPressed(sf::Mouse::Right)) {
+        sf::Vector2i pos = sf::Mouse::getPosition(window);
+        std::cout << "Right mouse pressed at position: " 
+                  << pos.x << ", " << pos.y << std::endl;
+    }
+
+    if (sf::Mouse::isButtonPressed(sf::Mouse::Middle)) {
+        sf::Vector2i pos = sf::Mouse::getPosition(window);
+        std::cout << "Middle mouse pressed at position: " 
+                  << pos.x << ", " << pos.y << std::endl;
+    }
 }
 
-switch (sf::Mouse::Unknown, sf::Mouse::getPosition())
-{
-    case sf::Mouse::Left:
-        std::cout << "Left mouse button pressed at position: (" 
-                  << sf::Mouse::getPosition().x << ", " 
-                  << sf::Mouse::getPosition().y << ")" << std::endl;
-        break;
-    
-    case sf::Mouse::Right:
-        std::cout << "Right mouse button pressed at position: (" 
-                  << sf::Mouse::getPosition().x << ", " 
-                  << sf::Mouse::getPosition().y << ")" << std::endl;
-        break;
-
-    case sf::Mouse::Middle:
-        std::cout << "Middle mouse button pressed at position: (" 
-                  << sf::Mouse::getPosition().x << ", " 
-                  << sf::Mouse::getPosition().y << ")" << std::endl;
-        break;
-
-    default:
-        break;
+bool InputManager::isKeyPressed(int key) {
+    return sf::Keyboard::isKeyPressed(static_cast<sf::Keyboard::Key>(key));
 }
+
+bool InputManager::isMousePressed(int button) {
+    return sf::Mouse::isButtonPressed(static_cast<sf::Mouse::Button>(button));
+}
+
+std::pair<int, int> InputManager::getMousePosition() {
+    sf::Vector2i pos = sf::Mouse::getPosition();
+    return std::make_pair(pos.x, pos.y);
 }
