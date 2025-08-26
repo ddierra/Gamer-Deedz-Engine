@@ -24,6 +24,31 @@ int main() {
 
         input.update(window);
 
+        if (input.isKeyPressed(sf::Keyboard::A)) {
+            rectangle.move(-5.f, 0.f);
+        }
+        if (input.isKeyPressed(sf::Keyboard::D)) {
+            rectangle.move(5.f, 0.f);
+        }
+        if (input.isKeyPressed(sf::Keyboard::W)) {
+            rectangle.move(0.f, -5.f);
+        }
+        if (input.isKeyPressed(sf::Keyboard::S)) {
+            rectangle.move(0.f, 5.f);
+        }
+        if (input.isKeyPressed(sf::Keyboard::Left)) {
+            circle.move(-5.f, 0.f);
+        }
+        if (input.isKeyPressed(sf::Keyboard::Right)) {
+            circle.move(5.f, 0.f);
+        }
+        if (input.isKeyPressed(sf::Keyboard::Up)) {
+            circle.move(0.f, -5.f);
+        }
+        if (input.isKeyPressed(sf::Keyboard::Down)) {
+            circle.move(0.f, 5.f);
+        }
+
         window.clear(sf::Color::Black);
         window.draw(rectangle);
         window.draw(circle);

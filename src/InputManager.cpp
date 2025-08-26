@@ -10,19 +10,19 @@ void InputManager::update(sf::RenderWindow& window) {
     }
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-        rectangle.move(-0.1f, 0.f);
+        std::cout << "A key is pressed." << std::endl;
     }
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-        rectangle.move(0.1f, 0.f);
+        std::cout << "D key is pressed." << std::endl;
     }
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-        rectangle.move(0.f, -0.1f);
+        std::cout << "W key is pressed." << std::endl;
     }
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-        rectangle.move(0.f, 0.1f);
+        std::cout << "S key is pressed." << std::endl;
     }
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
@@ -34,19 +34,19 @@ void InputManager::update(sf::RenderWindow& window) {
     }   
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-        circle.move(-0.1f, 0.f);
+        std::cout << "Left Arrow key is pressed." << std::endl;
     } 
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-        circle.move(0.1f, 0.f);
+        std::cout << "Right Arrow key is pressed." << std::endl;
     }
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
-        circle.move(0.f, -0.1f);
+        std::cout << "Up Arrow key is pressed." << std::endl;
     }
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
-        circle.move(0.f, 0.1f);
+        std::cout << "Down Arrow key is pressed." << std::endl;
     }
 
     if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
