@@ -1,20 +1,42 @@
 #include "InputManager.hpp"
 #include <SFML/Graphics.hpp>
+#include "EntityManager.hpp"
+#include <iostream>
+
+struct Position {
+    float x, y;
+    Position(float x = 0.f, float y = 0.f) : x(x), y(y) {}
+};
+
+struct Velocity {
+    float vx, vy;
+    Velocity(float vx = 0.f, float vy = 0.f) : vx(vx), vy(vy) {}
+};
+
 
 int main() {
     sf::RenderWindow window(sf::VideoMode(800, 600), "Gamer Deedz Engine");
-
     InputManager input;
+    EntityManager em;
 
-    //Add a simple shapes to visualize
+    // Create entities
+    Entity rectangleEntity = em.createEntity();
+    em.addComponent<Position>(rectangleEntity, 200.f, 200.f);
+
+    Entity circleEntity = em.createEntity();
+    em.addComponent<Position>(circleEntity, 400.f, 300.f);
+
+    // Get references to Position components
+    auto rectPos = em.getComponent<Position>(rectangleEntity);
+    auto circPos = em.getComponent<Position>(circleEntity);
+
+    // Create shapes
     sf::RectangleShape rectangle(sf::Vector2f(100.f, 50.f));
     rectangle.setFillColor(sf::Color::Yellow);
-    rectangle.setPosition(200.f, 200.f);
 
     sf::CircleShape circle(50.f);
     circle.setFillColor(sf::Color::Blue);
-    circle.setPosition(400.f, 300.f);
-    
+
     while (window.isOpen()) {
         sf::Event event;
         while (window.pollEvent(event)) {
@@ -24,30 +46,21 @@ int main() {
 
         input.update(window);
 
-        if (input.isKeyPressed(sf::Keyboard::A)) {
-            rectangle.move(-1/4.f, 0.f);
-        }
-        if (input.isKeyPressed(sf::Keyboard::D)) {
-            rectangle.move(1/4.f, 0.f);
-        }
-        if (input.isKeyPressed(sf::Keyboard::W)) {
-            rectangle.move(0.f, -1/4.f);
-        }
-        if (input.isKeyPressed(sf::Keyboard::S)) {
-            rectangle.move(0.f, 1/4.f);
-        }
-        if (input.isKeyPressed(sf::Keyboard::Left)) {
-            circle.move(-1/4.f, 0.f);
-        }
-        if (input.isKeyPressed(sf::Keyboard::Right)) {
-            circle.move(1/4.f, 0.f);
-        }
-        if (input.isKeyPressed(sf::Keyboard::Up)) {
-            circle.move(0.f, -1/4.f);
-        }
-        if (input.isKeyPressed(sf::Keyboard::Down)) {
-            circle.move(0.f, 1/4.f);
-        }
+        // Move rectangle with WASD
+        if (input.isKeyPressed(sf::Keyboard::A)) rectPos->x -= 0.25f;
+        if (input.isKeyPressed(sf::Keyboard::D)) rectPos->x += 0.25f;
+        if (input.isKeyPressed(sf::Keyboard::W)) rectPos->y -= 0.25f;
+        if (input.isKeyPressed(sf::Keyboard::S)) rectPos->y += 0.25f;
+
+        // Move circle with arrow keys
+        if (input.isKeyPressed(sf::Keyboard::Left)) circPos->x -= 0.25f;
+        if (input.isKeyPressed(sf::Keyboard::Right)) circPos->x += 0.25f;
+        if (input.isKeyPressed(sf::Keyboard::Up)) circPos->y -= 0.25f;
+        if (input.isKeyPressed(sf::Keyboard::Down)) circPos->y += 0.25f;
+
+        // Sync shapes with ECS positions
+        rectangle.setPosition(rectPos->x, rectPos->y);
+        circle.setPosition(circPos->x, circPos->y);
 
         window.clear(sf::Color::Black);
         window.draw(rectangle);

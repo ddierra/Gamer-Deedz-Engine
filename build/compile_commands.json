@@ -10,5 +10,11 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\InputManager.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\InputManager.cpp",
   "file": "A:/Gamer-Deedz-Engine/src/InputManager.cpp",
   "output": "CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj"
+},
+{
+  "directory": "A:/Gamer-Deedz-Engine/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\EntityManager.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\EntityManager.cpp",
+  "file": "A:/Gamer-Deedz-Engine/src/EntityManager.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/EntityManager.cpp.obj"
 }
 ]
