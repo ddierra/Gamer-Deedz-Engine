@@ -128,29 +128,29 @@ GameEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/build
 .PHONY : GameEngine/fast
 
-src/EntityManager/EntityManager.obj: src/EntityManager/EntityManager.cpp.obj
-.PHONY : src/EntityManager/EntityManager.obj
+src/Entities/EntityManager.obj: src/Entities/EntityManager.cpp.obj
+.PHONY : src/Entities/EntityManager.obj
 
 # target to build an object file
-src/EntityManager/EntityManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.obj
-.PHONY : src/EntityManager/EntityManager.cpp.obj
+src/Entities/EntityManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Entities/EntityManager.cpp.obj
+.PHONY : src/Entities/EntityManager.cpp.obj
 
-src/EntityManager/EntityManager.i: src/EntityManager/EntityManager.cpp.i
-.PHONY : src/EntityManager/EntityManager.i
+src/Entities/EntityManager.i: src/Entities/EntityManager.cpp.i
+.PHONY : src/Entities/EntityManager.i
 
 # target to preprocess a source file
-src/EntityManager/EntityManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.i
-.PHONY : src/EntityManager/EntityManager.cpp.i
+src/Entities/EntityManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Entities/EntityManager.cpp.i
+.PHONY : src/Entities/EntityManager.cpp.i
 
-src/EntityManager/EntityManager.s: src/EntityManager/EntityManager.cpp.s
-.PHONY : src/EntityManager/EntityManager.s
+src/Entities/EntityManager.s: src/Entities/EntityManager.cpp.s
+.PHONY : src/Entities/EntityManager.s
 
 # target to generate assembly for a file
-src/EntityManager/EntityManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.s
-.PHONY : src/EntityManager/EntityManager.cpp.s
+src/Entities/EntityManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Entities/EntityManager.cpp.s
+.PHONY : src/Entities/EntityManager.cpp.s
 
 src/InputManager.obj: src/InputManager.cpp.obj
 .PHONY : src/InputManager.obj
@@ -200,29 +200,29 @@ src/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
-src/Systems/MovementSystem.obj: src/Systems/MovementSystem.cpp.obj
-.PHONY : src/Systems/MovementSystem.obj
+src/SystemBase/MovementSystem.obj: src/SystemBase/MovementSystem.cpp.obj
+.PHONY : src/SystemBase/MovementSystem.obj
 
 # target to build an object file
-src/Systems/MovementSystem.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Systems/MovementSystem.cpp.obj
-.PHONY : src/Systems/MovementSystem.cpp.obj
+src/SystemBase/MovementSystem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.obj
+.PHONY : src/SystemBase/MovementSystem.cpp.obj
 
-src/Systems/MovementSystem.i: src/Systems/MovementSystem.cpp.i
-.PHONY : src/Systems/MovementSystem.i
+src/SystemBase/MovementSystem.i: src/SystemBase/MovementSystem.cpp.i
+.PHONY : src/SystemBase/MovementSystem.i
 
 # target to preprocess a source file
-src/Systems/MovementSystem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Systems/MovementSystem.cpp.i
-.PHONY : src/Systems/MovementSystem.cpp.i
+src/SystemBase/MovementSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.i
+.PHONY : src/SystemBase/MovementSystem.cpp.i
 
-src/Systems/MovementSystem.s: src/Systems/MovementSystem.cpp.s
-.PHONY : src/Systems/MovementSystem.s
+src/SystemBase/MovementSystem.s: src/SystemBase/MovementSystem.cpp.s
+.PHONY : src/SystemBase/MovementSystem.s
 
 # target to generate assembly for a file
-src/Systems/MovementSystem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Systems/MovementSystem.cpp.s
-.PHONY : src/Systems/MovementSystem.cpp.s
+src/SystemBase/MovementSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.s
+.PHONY : src/SystemBase/MovementSystem.cpp.s
 
 # Help Target
 help:
@@ -233,18 +233,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... GameEngine
-	@echo ... src/EntityManager/EntityManager.obj
-	@echo ... src/EntityManager/EntityManager.i
-	@echo ... src/EntityManager/EntityManager.s
+	@echo ... src/Entities/EntityManager.obj
+	@echo ... src/Entities/EntityManager.i
+	@echo ... src/Entities/EntityManager.s
 	@echo ... src/InputManager.obj
 	@echo ... src/InputManager.i
 	@echo ... src/InputManager.s
 	@echo ... src/Main.obj
 	@echo ... src/Main.i
 	@echo ... src/Main.s
-	@echo ... src/Systems/MovementSystem.obj
-	@echo ... src/Systems/MovementSystem.i
-	@echo ... src/Systems/MovementSystem.s
+	@echo ... src/SystemBase/MovementSystem.obj
+	@echo ... src/SystemBase/MovementSystem.i
+	@echo ... src/SystemBase/MovementSystem.s
 .PHONY : help
 
 

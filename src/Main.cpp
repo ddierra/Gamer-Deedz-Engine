@@ -1,6 +1,6 @@
 #include "InputManager.hpp"
 #include <SFML/Graphics.hpp>
-#include "EntityManager/EntityManager.hpp"
+#include "Entities/EntityManager.hpp"
 #include <iostream>
 #include "Components/Position.hpp"
 #include "Components/Velocity.hpp"

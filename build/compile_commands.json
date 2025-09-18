@@ -1,26 +1,26 @@
 [
 {
   "directory": "A:/Gamer-Deedz-Engine/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\Main.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\Main.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/GameEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\Main.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\Main.cpp",
   "file": "A:/Gamer-Deedz-Engine/src/Main.cpp",
   "output": "CMakeFiles/GameEngine.dir/src/Main.cpp.obj"
 },
 {
   "directory": "A:/Gamer-Deedz-Engine/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\InputManager.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\InputManager.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/GameEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\InputManager.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\InputManager.cpp",
   "file": "A:/Gamer-Deedz-Engine/src/InputManager.cpp",
   "output": "CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj"
 },
 {
   "directory": "A:/Gamer-Deedz-Engine/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\EntityManager\\EntityManager.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\EntityManager\\EntityManager.cpp",
-  "file": "A:/Gamer-Deedz-Engine/src/EntityManager/EntityManager.cpp",
-  "output": "CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/GameEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\Entities\\EntityManager.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\Entities\\EntityManager.cpp",
+  "file": "A:/Gamer-Deedz-Engine/src/Entities/EntityManager.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/Entities/EntityManager.cpp.obj"
 },
 {
   "directory": "A:/Gamer-Deedz-Engine/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\Systems\\MovementSystem.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\Systems\\MovementSystem.cpp",
-  "file": "A:/Gamer-Deedz-Engine/src/Systems/MovementSystem.cpp",
-  "output": "CMakeFiles/GameEngine.dir/src/Systems/MovementSystem.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/GameEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\SystemBase\\MovementSystem.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\SystemBase\\MovementSystem.cpp",
+  "file": "A:/Gamer-Deedz-Engine/src/SystemBase/MovementSystem.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.obj"
 }
 ]

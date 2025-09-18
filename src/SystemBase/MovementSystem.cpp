@@ -1,9 +1,6 @@
- #pragma once
- #include "MovementSystem.hpp"
- #include "Components/Position.hpp"
- #include "Components/Velocity.hpp"
- 
- void MovementSystem::update(Entitymanager& em, float dt){
+#include "SystemBase/MovementSystem.hpp"
+
+ void MovementSystem::update(EntityManager& em, float dt){
     for (Entity e:  entities){
         auto pos = em.getComponent<Position>(e);
         auto vel = em.getComponent<Velocity>(e);

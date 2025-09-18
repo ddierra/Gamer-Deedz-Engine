@@ -1,6 +1,6 @@
 #pragma once
 #include <vector>
-#include "EntityManager/EntityManager.hpp"
+#include "Entities/EntityManager.hpp"
 
 class System{
 public:
