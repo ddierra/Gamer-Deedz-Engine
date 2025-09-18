@@ -200,29 +200,29 @@ src/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
-src/Systems/Movement.obj: src/Systems/Movement.cpp.obj
-.PHONY : src/Systems/Movement.obj
+src/Systems/MovementSystem.obj: src/Systems/MovementSystem.cpp.obj
+.PHONY : src/Systems/MovementSystem.obj
 
 # target to build an object file
-src/Systems/Movement.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Systems/Movement.cpp.obj
-.PHONY : src/Systems/Movement.cpp.obj
+src/Systems/MovementSystem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Systems/MovementSystem.cpp.obj
+.PHONY : src/Systems/MovementSystem.cpp.obj
 
-src/Systems/Movement.i: src/Systems/Movement.cpp.i
-.PHONY : src/Systems/Movement.i
+src/Systems/MovementSystem.i: src/Systems/MovementSystem.cpp.i
+.PHONY : src/Systems/MovementSystem.i
 
 # target to preprocess a source file
-src/Systems/Movement.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Systems/Movement.cpp.i
-.PHONY : src/Systems/Movement.cpp.i
+src/Systems/MovementSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Systems/MovementSystem.cpp.i
+.PHONY : src/Systems/MovementSystem.cpp.i
 
-src/Systems/Movement.s: src/Systems/Movement.cpp.s
-.PHONY : src/Systems/Movement.s
+src/Systems/MovementSystem.s: src/Systems/MovementSystem.cpp.s
+.PHONY : src/Systems/MovementSystem.s
 
 # target to generate assembly for a file
-src/Systems/Movement.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Systems/Movement.cpp.s
-.PHONY : src/Systems/Movement.cpp.s
+src/Systems/MovementSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Systems/MovementSystem.cpp.s
+.PHONY : src/Systems/MovementSystem.cpp.s
 
 # Help Target
 help:
@@ -242,9 +242,9 @@ help:
 	@echo ... src/Main.obj
 	@echo ... src/Main.i
 	@echo ... src/Main.s
-	@echo ... src/Systems/Movement.obj
-	@echo ... src/Systems/Movement.i
-	@echo ... src/Systems/Movement.s
+	@echo ... src/Systems/MovementSystem.obj
+	@echo ... src/Systems/MovementSystem.i
+	@echo ... src/Systems/MovementSystem.s
 .PHONY : help
 
 

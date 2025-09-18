@@ -19,8 +19,8 @@
 },
 {
   "directory": "A:/Gamer-Deedz-Engine/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\Systems\\Movement.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\Systems\\Movement.cpp",
-  "file": "A:/Gamer-Deedz-Engine/src/Systems/Movement.cpp",
-  "output": "CMakeFiles/GameEngine.dir/src/Systems/Movement.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\Systems\\MovementSystem.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\Systems\\MovementSystem.cpp",
+  "file": "A:/Gamer-Deedz-Engine/src/Systems/MovementSystem.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/Systems/MovementSystem.cpp.obj"
 }
 ]

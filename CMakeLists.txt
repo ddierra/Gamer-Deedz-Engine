@@ -11,6 +11,6 @@ add_executable(GameEngine
     src/main.cpp
     src/InputManager.cpp
     src/EntityManager/EntityManager.cpp
-    src/Systems/Movement.cpp)
+    src/Systems/MovementSystem.cpp)
 
 target_link_libraries(GameEngine sfml-system sfml-window sfml-graphics sfml-audio sfml-network)
