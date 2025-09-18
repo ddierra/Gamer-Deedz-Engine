@@ -251,7 +251,7 @@ CMakeFiles/GameEngine.dir/src/Main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/iostream \
  C:/msys64/mingw64/include/c++/14.2.0/istream \
  C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc \
- A:\Gamer-Deedz-Engine\src\EntityManager.hpp \
+ A:\Gamer-Deedz-Engine\src\EntityManager/EntityManager.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/unordered_map \
  C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable.h \
@@ -272,4 +272,6 @@ CMakeFiles/GameEngine.dir/src/Main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/backward/auto_ptr.h \
  C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
  C:/msys64/mingw64/include/c++/14.2.0/cstdint \
- C:/msys64/mingw64/include/c++/14.2.0/any
+ C:/msys64/mingw64/include/c++/14.2.0/any \
+ A:\Gamer-Deedz-Engine\src\Components/Position.hpp \
+ A:\Gamer-Deedz-Engine\src\Components/Velocity.hpp

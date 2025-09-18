@@ -128,29 +128,29 @@ GameEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/build
 .PHONY : GameEngine/fast
 
-src/EntityManager.obj: src/EntityManager.cpp.obj
-.PHONY : src/EntityManager.obj
+src/EntityManager/EntityManager.obj: src/EntityManager/EntityManager.cpp.obj
+.PHONY : src/EntityManager/EntityManager.obj
 
 # target to build an object file
-src/EntityManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/EntityManager.cpp.obj
-.PHONY : src/EntityManager.cpp.obj
+src/EntityManager/EntityManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.obj
+.PHONY : src/EntityManager/EntityManager.cpp.obj
 
-src/EntityManager.i: src/EntityManager.cpp.i
-.PHONY : src/EntityManager.i
+src/EntityManager/EntityManager.i: src/EntityManager/EntityManager.cpp.i
+.PHONY : src/EntityManager/EntityManager.i
 
 # target to preprocess a source file
-src/EntityManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/EntityManager.cpp.i
-.PHONY : src/EntityManager.cpp.i
+src/EntityManager/EntityManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.i
+.PHONY : src/EntityManager/EntityManager.cpp.i
 
-src/EntityManager.s: src/EntityManager.cpp.s
-.PHONY : src/EntityManager.s
+src/EntityManager/EntityManager.s: src/EntityManager/EntityManager.cpp.s
+.PHONY : src/EntityManager/EntityManager.s
 
 # target to generate assembly for a file
-src/EntityManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/EntityManager.cpp.s
-.PHONY : src/EntityManager.cpp.s
+src/EntityManager/EntityManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.s
+.PHONY : src/EntityManager/EntityManager.cpp.s
 
 src/InputManager.obj: src/InputManager.cpp.obj
 .PHONY : src/InputManager.obj
@@ -209,9 +209,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... GameEngine
-	@echo ... src/EntityManager.obj
-	@echo ... src/EntityManager.i
-	@echo ... src/EntityManager.s
+	@echo ... src/EntityManager/EntityManager.obj
+	@echo ... src/EntityManager/EntityManager.i
+	@echo ... src/EntityManager/EntityManager.s
 	@echo ... src/InputManager.obj
 	@echo ... src/InputManager.i
 	@echo ... src/InputManager.s

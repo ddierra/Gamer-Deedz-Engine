@@ -99,32 +99,32 @@ CMakeFiles/GameEngine.dir/src/InputManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/InputManager.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S A:\Gamer-Deedz-Engine\src\InputManager.cpp -o CMakeFiles\GameEngine.dir\src\InputManager.cpp.s
 
-CMakeFiles/GameEngine.dir/src/EntityManager.cpp.obj: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/src/EntityManager.cpp.obj: A:/Gamer-Deedz-Engine/src/EntityManager.cpp
-CMakeFiles/GameEngine.dir/src/EntityManager.cpp.obj: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=A:\Gamer-Deedz-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GameEngine.dir/src/EntityManager.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/EntityManager.cpp.obj -MF CMakeFiles\GameEngine.dir\src\EntityManager.cpp.obj.d -o CMakeFiles\GameEngine.dir\src\EntityManager.cpp.obj -c A:\Gamer-Deedz-Engine\src\EntityManager.cpp
+CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.obj: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.obj: A:/Gamer-Deedz-Engine/src/EntityManager/EntityManager.cpp
+CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.obj: CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=A:\Gamer-Deedz-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.obj -MF CMakeFiles\GameEngine.dir\src\EntityManager\EntityManager.cpp.obj.d -o CMakeFiles\GameEngine.dir\src\EntityManager\EntityManager.cpp.obj -c A:\Gamer-Deedz-Engine\src\EntityManager\EntityManager.cpp
 
-CMakeFiles/GameEngine.dir/src/EntityManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/EntityManager.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E A:\Gamer-Deedz-Engine\src\EntityManager.cpp > CMakeFiles\GameEngine.dir\src\EntityManager.cpp.i
+CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E A:\Gamer-Deedz-Engine\src\EntityManager\EntityManager.cpp > CMakeFiles\GameEngine.dir\src\EntityManager\EntityManager.cpp.i
 
-CMakeFiles/GameEngine.dir/src/EntityManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/EntityManager.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S A:\Gamer-Deedz-Engine\src\EntityManager.cpp -o CMakeFiles\GameEngine.dir\src\EntityManager.cpp.s
+CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S A:\Gamer-Deedz-Engine\src\EntityManager\EntityManager.cpp -o CMakeFiles\GameEngine.dir\src\EntityManager\EntityManager.cpp.s
 
 # Object files for target GameEngine
 GameEngine_OBJECTS = \
 "CMakeFiles/GameEngine.dir/src/Main.cpp.obj" \
 "CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj" \
-"CMakeFiles/GameEngine.dir/src/EntityManager.cpp.obj"
+"CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.obj"
 
 # External object files for target GameEngine
 GameEngine_EXTERNAL_OBJECTS =
 
 GameEngine.exe: CMakeFiles/GameEngine.dir/src/Main.cpp.obj
 GameEngine.exe: CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj
-GameEngine.exe: CMakeFiles/GameEngine.dir/src/EntityManager.cpp.obj
+GameEngine.exe: CMakeFiles/GameEngine.dir/src/EntityManager/EntityManager.cpp.obj
 GameEngine.exe: CMakeFiles/GameEngine.dir/build.make
 GameEngine.exe: C:/msys64/mingw64/lib/libsfml-graphics.dll.a
 GameEngine.exe: C:/msys64/mingw64/lib/libsfml-audio.dll.a

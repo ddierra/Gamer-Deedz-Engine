@@ -1,17 +1,9 @@
 #include "InputManager.hpp"
 #include <SFML/Graphics.hpp>
-#include "EntityManager.hpp"
+#include "EntityManager/EntityManager.hpp"
 #include <iostream>
-
-struct Position {
-    float x, y;
-    Position(float x = 0.f, float y = 0.f) : x(x), y(y) {}
-};
-
-struct Velocity {
-    float vx, vy;
-    Velocity(float vx = 0.f, float vy = 0.f) : vx(vx), vy(vy) {}
-};
+#include "Components/Position.hpp"
+#include "Components/Velocity.hpp"
 
 
 int main() {
