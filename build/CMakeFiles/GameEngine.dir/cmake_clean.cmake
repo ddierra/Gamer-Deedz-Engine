@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj.d"
   "CMakeFiles/GameEngine.dir/src/Main.cpp.obj"
   "CMakeFiles/GameEngine.dir/src/Main.cpp.obj.d"
+  "CMakeFiles/GameEngine.dir/src/Systems/Movement.cpp.obj"
+  "CMakeFiles/GameEngine.dir/src/Systems/Movement.cpp.obj.d"
   "GameEngine.exe"
   "GameEngine.exe.manifest"
   "GameEngine.pdb"

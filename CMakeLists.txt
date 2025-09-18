@@ -10,6 +10,7 @@ find_package(SFML 2.5 COMPONENTS system window graphics audio network REQUIRED)
 add_executable(GameEngine 
     src/main.cpp
     src/InputManager.cpp
-    src/EntityManager/EntityManager.cpp)
+    src/EntityManager/EntityManager.cpp
+    src/Systems/Movement.cpp)
 
 target_link_libraries(GameEngine sfml-system sfml-window sfml-graphics sfml-audio sfml-network)

@@ -200,6 +200,30 @@ src/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
+src/Systems/Movement.obj: src/Systems/Movement.cpp.obj
+.PHONY : src/Systems/Movement.obj
+
+# target to build an object file
+src/Systems/Movement.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Systems/Movement.cpp.obj
+.PHONY : src/Systems/Movement.cpp.obj
+
+src/Systems/Movement.i: src/Systems/Movement.cpp.i
+.PHONY : src/Systems/Movement.i
+
+# target to preprocess a source file
+src/Systems/Movement.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Systems/Movement.cpp.i
+.PHONY : src/Systems/Movement.cpp.i
+
+src/Systems/Movement.s: src/Systems/Movement.cpp.s
+.PHONY : src/Systems/Movement.s
+
+# target to generate assembly for a file
+src/Systems/Movement.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Systems/Movement.cpp.s
+.PHONY : src/Systems/Movement.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,6 +242,9 @@ help:
 	@echo ... src/Main.obj
 	@echo ... src/Main.i
 	@echo ... src/Main.s
+	@echo ... src/Systems/Movement.obj
+	@echo ... src/Systems/Movement.i
+	@echo ... src/Systems/Movement.s
 .PHONY : help
 
 
