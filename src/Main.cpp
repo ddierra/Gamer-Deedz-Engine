@@ -14,9 +14,11 @@ int main() {
     // Create entities
     Entity rectangleEntity = em.createEntity();
     em.addComponent<Position>(rectangleEntity, 200.f, 200.f);
+    em.addComponent<Velocity>(rectangleEntity, 0.f, 0.f);
 
     Entity circleEntity = em.createEntity();
     em.addComponent<Position>(circleEntity, 400.f, 300.f);
+    em.addComponent<Velocity>(circleEntity, 0.f, 0.f);
 
     // Get references to Position components
     auto rectPos = em.getComponent<Position>(rectangleEntity);
