@@ -30,8 +30,48 @@ void InputManager::handleInput(sf::RenderWindow& window, UserInput& input) {
     }
 }
 
-void InputManager::update(sf::RenderWindow& window) {
+void InputManager::update(EntityManager& em, sf::RenderWindow& window, const UserInput& input) {
     // Update input states if necessary
+
+    for(Entity e: entities) {
+        // Process input for each entity if needed
+        auto vel = em.getComponent<Velocity>(e);
+        auto input = em.getComponent<UserInput>(e);
+
+        if (! vel || !input) continue;{
+            vel->vx += 0.f;
+            vel->vy += 0.f;
+
+            input->up = sf::Keyboard::isKeyPressed(sf::Keyboard::W);
+            input->down = sf::Keyboard::isKeyPressed(sf::Keyboard::S);
+            input->left = sf::Keyboard::isKeyPressed(sf::Keyboard::A);
+            input->right = sf::Keyboard::isKeyPressed(sf::Keyboard::D);
+            input->jump = sf::Keyboard::isKeyPressed(sf::Keyboard::Space);
+
+            if(input->up) {
+                vel->vy -= UserSpeed; // Move up
+            }
+            if(input->down) {
+                vel->vy += UserSpeed; // Move down
+            }
+            if(input->left) {
+                vel->vx -= UserSpeed; // Move left
+            }
+            if(input->right) {
+                vel->vx += UserSpeed; // Move right
+                }
+            if(input->jump) {
+                int i = 0;
+                while(i < 1){ {
+                    vel->vy -= UserSpeed * 2; // Jump (stronger upward force)
+                    vel->vx += 0.f;
+                    vel->vy += 0.f;
+                    i++;
+                }
+            }
+        }
+    }
+}
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
         std::cout << "Escape key is pressed." << std::endl;
@@ -108,3 +148,4 @@ std::pair<int, int> InputManager::getMousePosition() {
     sf::Vector2i pos = sf::Mouse::getPosition();
     return std::make_pair(pos.x, pos.y);
 }
+

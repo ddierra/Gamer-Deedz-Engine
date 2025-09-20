@@ -128,4 +128,8 @@ CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/cstdint \
  C:/msys64/mingw64/include/c++/14.2.0/any \
  A:/Gamer-Deedz-Engine/src/Components/Position.hpp \
- A:/Gamer-Deedz-Engine/src/Components/Velocity.hpp
+ A:/Gamer-Deedz-Engine/src/Components/Velocity.hpp \
+ A:/Gamer-Deedz-Engine/src/Components/UserInput.hpp \
+ A:/Gamer-Deedz-Engine/src/Components/Transform.hpp \
+ C:/msys64/mingw64/include/SFML/System/Vector2.hpp \
+ C:/msys64/mingw64/include/SFML/System/Vector2.inl

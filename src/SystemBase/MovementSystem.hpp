@@ -9,4 +9,5 @@
 class MovementSystem: public System{
 public:
     void update(EntityManager& em, float dt) override;
+    void addEntity(Entity e) { entities.push_back(e); }
 };

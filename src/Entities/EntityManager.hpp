@@ -32,12 +32,19 @@ public:
         return components[typeid(Component)].count(e) > 0;
     }
 
-    template<typename Component>
+    template<typename... Component>
     std::vector<Entity> getEntitiesWith() {
         std::vector<Entity> result;
-        auto& baseMap = components[typeid(std::tuple_element_t<0, std::tuple<Component...>>)];
-        for(auto& [entity, comp] : baseMap) {
-            bool hasAll = true;
+
+        if constexpr (sizeof...(Component) == 0) {
+            return result; // No components specified
+        }
+        
+        using First = std::tuple_element_t<0, std::tuple<Component...>>;
+        auto& baseMap = components[typeid(First)];
+        for(auto& pair : baseMap) {
+            Entity entity = pair.first;
+            
             if((hasComponent<Component>(entity) && ...)) {
                 result.push_back(entity);
             }
