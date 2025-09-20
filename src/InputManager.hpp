@@ -13,6 +13,7 @@ class InputManager{
         void addEntity(Entity e) { entities.push_back(e); }
         InputManager(float speed = 0.25f) : UserSpeed(speed) {}
         void update(EntityManager& em, sf::RenderWindow& window, const UserInput& input);
+        void update(EntityManager& em, float userSpeed);
         bool isKeyPressed(int key);
         bool isMousePressed(int button);
         std::pair<int, int> getMousePosition();

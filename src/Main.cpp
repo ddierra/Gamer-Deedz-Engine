@@ -43,10 +43,14 @@ int main() {
 
     // Input manager and movement system
     InputManager inputMgr;
-    MovementSystem movementSys;
+    inputMgr.addEntity(rectangleEntity);
+    inputMgr.addEntity(circleEntity);
 
+    MovementSystem movementSys;
     movementSys.addEntity(rectangleEntity);
     movementSys.addEntity(circleEntity);
+
+   float userSpeed = 0.25f; // Movement speed
 
     sf::Clock clock;
     while (window.isOpen()) {
@@ -58,7 +62,7 @@ int main() {
 
         float dt = clock.restart().asSeconds();
 
-        inputMgr.update(em, window, UserInput{});
+        inputMgr.update(em, userSpeed);
         movementSys.update(em, dt);
 
         // Sync shapes with ECS positions

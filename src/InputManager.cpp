@@ -30,7 +30,7 @@ void InputManager::handleInput(sf::RenderWindow& window, UserInput& input) {
     }
 }
 
-void InputManager::update(EntityManager& em, sf::RenderWindow& window, const UserInput& input) {
+void InputManager::update(EntityManager& em, float userSpeed) {
     // Update input states if necessary
 
     for(Entity e: entities) {
@@ -49,21 +49,21 @@ void InputManager::update(EntityManager& em, sf::RenderWindow& window, const Use
             input->jump = sf::Keyboard::isKeyPressed(sf::Keyboard::Space);
 
             if(input->up) {
-                vel->vy -= UserSpeed; // Move up
+                vel->vy -= userSpeed; // Move up
             }
             if(input->down) {
-                vel->vy += UserSpeed; // Move down
+                vel->vy += userSpeed; // Move down
             }
             if(input->left) {
-                vel->vx -= UserSpeed; // Move left
+                vel->vx -= userSpeed; // Move left
             }
             if(input->right) {
-                vel->vx += UserSpeed; // Move right
+                vel->vx += userSpeed; // Move right
                 }
             if(input->jump) {
                 int i = 0;
                 while(i < 1){ {
-                    vel->vy -= UserSpeed * 2; // Jump (stronger upward force)
+                    vel->vy -= userSpeed * 2; // Jump (stronger upward force)
                     vel->vx += 0.f;
                     vel->vy += 0.f;
                     i++;
@@ -72,6 +72,9 @@ void InputManager::update(EntityManager& em, sf::RenderWindow& window, const Use
         }
     }
 }
+}
+
+void InputManager::update(EntityManager& em, sf::RenderWindow& window, const UserInput& input) {
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
         std::cout << "Escape key is pressed." << std::endl;
