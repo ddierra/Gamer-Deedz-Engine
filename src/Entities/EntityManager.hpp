@@ -32,6 +32,19 @@ public:
         return components[typeid(Component)].count(e) > 0;
     }
 
+    template<typename Component>
+    std::vector<Entity> getEntitiesWith() {
+        std::vector<Entity> result;
+        auto& baseMap = components[typeid(std::tuple_element_t<0, std::tuple<Component...>>)];
+        for(auto& [entity, comp] : baseMap) {
+            bool hasAll = true;
+            if((hasComponent<Component>(entity) && ...)) {
+                result.push_back(entity);
+            }
+        }
+        return result;
+    }
+
 private:
     Entity nextEntity = 0;
     std::unordered_map<std::type_index, std::unordered_map<Entity, std::any>> components;
