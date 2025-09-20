@@ -2,6 +2,34 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 
+void InputManager::handleInput(sf::RenderWindow& window, UserInput& input) {
+    // Handle events
+    input = {}; // Reset input state
+    sf::Event event;
+    while (window.pollEvent(event)) {
+        if (event.type == sf::Event::Closed) {
+            window.close();
+        }
+    }
+
+    // Update input states based on key presses
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+        input.up = true;
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+        input.down = true;
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
+        input.left = true;
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+        input.right = true;
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
+        input.jump = true;
+    }
+}
+
 void InputManager::update(sf::RenderWindow& window) {
     // Update input states if necessary
 
