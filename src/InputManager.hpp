@@ -1,22 +1,16 @@
 #pragma once
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
-#include <utility>
-#include <iostream>
+#include <vector>
 #include "Components/UserInput.hpp"
 #include "Entities/EntityManager.hpp"
 #include "Components/Velocity.hpp"
 
 class InputManager{
     public:
-        void handleInput(sf::RenderWindow& window, UserInput& input);
-        void addEntity(Entity e) { entities.push_back(e); }
         InputManager(float speed = 0.25f) : UserSpeed(speed) {}
-        void update(EntityManager& em, sf::RenderWindow& window, const UserInput& input);
-        void update(EntityManager& em, float userSpeed);
-        bool isKeyPressed(int key);
-        bool isMousePressed(int button);
-        std::pair<int, int> getMousePosition();
+        void addEntity(Entity e) { entities.push_back(e); }
+        void update(EntityManager& em);
 
     private:
         float UserSpeed;
