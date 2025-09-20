@@ -5,13 +5,11 @@
     for (Entity e:  entities){
         auto pos = em.getComponent<Position>(e);
         auto vel = em.getComponent<Velocity>(e);
-        if(pos && vel){
-            for(auto& entity : em.getEntitiesWith<TransformComponent>()){
-                auto& transform = em.getComponent<TransformComponent>();
-                
-            }
-            pos->x += vel->vx * dt;
-            pos->y =+ vel->vy * dt;
+        auto transofrm = em.getComponent<TransformComponent>(e);
+
+        if(transofrm && vel){
+            transofrm->position.x += vel->vx * dt;
+            transofrm->position.y += vel->vy * dt;
         }
     }
 }
