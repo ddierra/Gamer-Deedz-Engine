@@ -8,9 +8,7 @@
         if(pos && vel){
             for(auto& entity : em.getEntitiesWith<TransformComponent>()){
                 auto& transform = em.getComponent<TransformComponent>();
-                if(UserInput.up){
-
-                }
+                
             }
             pos->x += vel->vx * dt;
             pos->y =+ vel->vy * dt;

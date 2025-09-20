@@ -4,6 +4,7 @@
 #include "Components/Position.hpp"
 #include "Components/Velocity.hpp"
 #include "Components/UserInput.hpp"
+#include "Components/Transform.hpp"
 
 class MovementSystem: public System{
 public:
