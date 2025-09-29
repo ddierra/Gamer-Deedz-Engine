@@ -13,6 +13,11 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(800, 600), "Gamer Deedz Engine");
     window.setFramerateLimit(60);
 
+    sf::RectangleShape sidebar;
+    sidebar.setSize(sf::Vector2f(150.f, 600.f));
+    sidebar.setFillColor(sf::Color(50, 50, 50));
+    sidebar.setPosition(800.f - 150.f, 0.f);
+
     InputManager input;
     EntityManager em;
 
@@ -62,7 +67,7 @@ int main() {
         }
 
         float dt = clock.restart().asSeconds();
-        
+
         inputMgr.update(em, window, UserInput{});
         movementSys.update(em, dt);
 
@@ -83,7 +88,8 @@ int main() {
         rectangle.setPosition(rectPos->x, rectPos->y);
         circle.setPosition(circPos->x, circPos->y);
 
-        window.clear(sf::Color::Black);
+        window.clear(sf::Color::White);
+        window.draw(sidebar);
         window.draw(rectangle);
         window.draw(circle);
         window.display();
