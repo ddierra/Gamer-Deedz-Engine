@@ -13,6 +13,7 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(800, 600), "Gamer Deedz Engine");
     window.setFramerateLimit(60);
 
+    InputManager input;
     EntityManager em;
 
     // Create entities
@@ -61,9 +62,22 @@ int main() {
         }
 
         float dt = clock.restart().asSeconds();
-
-        inputMgr.update(em, userSpeed);
+        
+        inputMgr.update(em, window, UserInput{});
         movementSys.update(em, dt);
+
+        
+        // Move rectangle with WASD
+        if (input.isKeyPressed(sf::Keyboard::A)) rectPos->x -= 0.25f;
+        if (input.isKeyPressed(sf::Keyboard::D)) rectPos->x += 0.25f;
+        if (input.isKeyPressed(sf::Keyboard::W)) rectPos->y -= 0.25f;
+        if (input.isKeyPressed(sf::Keyboard::S)) rectPos->y += 0.25f;
+
+        // Move circle with arrow keys
+        if (input.isKeyPressed(sf::Keyboard::Left)) circPos->x -= 0.25f;
+        if (input.isKeyPressed(sf::Keyboard::Right)) circPos->x += 0.25f;
+        if (input.isKeyPressed(sf::Keyboard::Up)) circPos->y -= 0.25f;
+        if (input.isKeyPressed(sf::Keyboard::Down)) circPos->y += 0.25f;
 
         // Sync shapes with ECS positions
         rectangle.setPosition(rectPos->x, rectPos->y);
