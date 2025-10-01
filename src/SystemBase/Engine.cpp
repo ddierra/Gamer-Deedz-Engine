@@ -5,15 +5,14 @@ void Engine::run() {
  sf::RenderWindow window(sf::VideoMode(800, 600), "Gamer Deedz Engine");
     window.setFramerateLimit(60);
 
-    sf::RectangleShape sidebar;
-    sidebar.setSize(sf::Vector2f(150.f, 600.f));
-    sidebar.setFillColor(sf::Color(50, 50, 50));
-    sidebar.setPosition(800.f - 150.f, 0.f);
+    SideBar sidebar;
+    sidebar.initialize(150.f, window.getSize().y, 0.f, 0.f, sf::Color::Blue);
+    sidebar.render(window);
 
     InputManager input;
     EntityManager em;
 
-    // Create entities
+    // Create entitiesmingw32
     Entity rectangleEntity = em.createEntity();
     em.addComponent<Position>(rectangleEntity, 200.f, 200.f);
     em.addComponent<Velocity>(rectangleEntity, 0.f, 0.f);
@@ -81,7 +80,7 @@ void Engine::run() {
         circle.setPosition(circPos->x, circPos->y);
 
         window.clear(sf::Color::White);
-        window.draw(sidebar);
+        window.draw(sidebar.background);
         window.draw(rectangle);
         window.draw(circle);
         window.display();

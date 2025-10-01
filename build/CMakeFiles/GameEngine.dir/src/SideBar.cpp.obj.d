@@ -1,6 +1,6 @@
-CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj: \
- A:\Gamer-Deedz-Engine\src\SystemBase\Engine.cpp \
- A:\Gamer-Deedz-Engine\src\SystemBase\Engine.hpp \
+CMakeFiles/GameEngine.dir/src/SideBar.cpp.obj: \
+ A:\Gamer-Deedz-Engine\src\SideBar.cpp \
+ A:\Gamer-Deedz-Engine\src\SideBar.hpp \
  C:/msys64/mingw64/include/SFML/Graphics.hpp \
  C:/msys64/mingw64/include/SFML/Window.hpp \
  C:/msys64/mingw64/include/SFML/System.hpp \
@@ -246,14 +246,14 @@ CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj: \
  C:/msys64/mingw64/include/SFML/Graphics/Sprite.hpp \
  C:/msys64/mingw64/include/SFML/Graphics/Text.hpp \
  C:/msys64/mingw64/include/SFML/Graphics/VertexBuffer.hpp \
- A:/Gamer-Deedz-Engine/src/InputManager.hpp \
+ A:\Gamer-Deedz-Engine\src\InputManager.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/utility \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_relops.h \
  C:/msys64/mingw64/include/c++/14.2.0/iostream \
  C:/msys64/mingw64/include/c++/14.2.0/istream \
  C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc \
- A:/Gamer-Deedz-Engine/src/Components/UserInput.hpp \
- A:/Gamer-Deedz-Engine/src/Entities/EntityManager.hpp \
+ A:\Gamer-Deedz-Engine\src\Components/UserInput.hpp \
+ A:\Gamer-Deedz-Engine\src\Entities/EntityManager.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/unordered_map \
  C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable.h \
@@ -275,13 +275,8 @@ CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
  C:/msys64/mingw64/include/c++/14.2.0/cstdint \
  C:/msys64/mingw64/include/c++/14.2.0/any \
- A:/Gamer-Deedz-Engine/src/Components/Velocity.hpp \
- A:/Gamer-Deedz-Engine/src/Components/Position.hpp \
- A:/Gamer-Deedz-Engine/src/SystemBase/MovementSystem.hpp \
- A:/Gamer-Deedz-Engine/src/SystemBase/Systems.hpp \
- A:/Gamer-Deedz-Engine/src/Components/Transform.hpp \
- A:/Gamer-Deedz-Engine/src/SideBar.hpp \
- A:/Gamer-Deedz-Engine/src/Button.hpp \
+ A:\Gamer-Deedz-Engine\src\Components/Velocity.hpp \
+ A:\Gamer-Deedz-Engine\src\Button.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/functional \
  C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
  C:/msys64/mingw64/include/c++/14.2.0/array \

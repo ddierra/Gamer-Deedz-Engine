@@ -1,6 +1,6 @@
-CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj: \
- A:\Gamer-Deedz-Engine\src\SystemBase\Engine.cpp \
- A:\Gamer-Deedz-Engine\src\SystemBase\Engine.hpp \
+CMakeFiles/GameEngine.dir/src/Button.cpp.obj: \
+ A:\Gamer-Deedz-Engine\src\Button.cpp \
+ A:\Gamer-Deedz-Engine\src\Button.hpp \
  C:/msys64/mingw64/include/SFML/Graphics.hpp \
  C:/msys64/mingw64/include/SFML/Window.hpp \
  C:/msys64/mingw64/include/SFML/System.hpp \
@@ -246,43 +246,15 @@ CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj: \
  C:/msys64/mingw64/include/SFML/Graphics/Sprite.hpp \
  C:/msys64/mingw64/include/SFML/Graphics/Text.hpp \
  C:/msys64/mingw64/include/SFML/Graphics/VertexBuffer.hpp \
- A:/Gamer-Deedz-Engine/src/InputManager.hpp \
- C:/msys64/mingw64/include/c++/14.2.0/utility \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_relops.h \
  C:/msys64/mingw64/include/c++/14.2.0/iostream \
  C:/msys64/mingw64/include/c++/14.2.0/istream \
  C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc \
- A:/Gamer-Deedz-Engine/src/Components/UserInput.hpp \
- A:/Gamer-Deedz-Engine/src/Entities/EntityManager.hpp \
+ C:/msys64/mingw64/include/c++/14.2.0/functional \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
  C:/msys64/mingw64/include/c++/14.2.0/unordered_map \
  C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable_policy.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/enable_special_members.h \
- C:/msys64/mingw64/include/c++/14.2.0/typeindex \
- C:/msys64/mingw64/include/c++/14.2.0/memory \
- C:/msys64/mingw64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/align.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_base.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/allocated_ptr.h \
- C:/msys64/mingw64/include/c++/14.2.0/ext/concurrence.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/shared_ptr_atomic.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_base.h \
- C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
- C:/msys64/mingw64/include/c++/14.2.0/backward/auto_ptr.h \
- C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
- C:/msys64/mingw64/include/c++/14.2.0/cstdint \
- C:/msys64/mingw64/include/c++/14.2.0/any \
- A:/Gamer-Deedz-Engine/src/Components/Velocity.hpp \
- A:/Gamer-Deedz-Engine/src/Components/Position.hpp \
- A:/Gamer-Deedz-Engine/src/SystemBase/MovementSystem.hpp \
- A:/Gamer-Deedz-Engine/src/SystemBase/Systems.hpp \
- A:/Gamer-Deedz-Engine/src/Components/Transform.hpp \
- A:/Gamer-Deedz-Engine/src/SideBar.hpp \
- A:/Gamer-Deedz-Engine/src/Button.hpp \
- C:/msys64/mingw64/include/c++/14.2.0/functional \
- C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
  C:/msys64/mingw64/include/c++/14.2.0/array \
  C:/msys64/mingw64/include/c++/14.2.0/compare

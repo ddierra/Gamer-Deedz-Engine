@@ -1,5 +1,10 @@
 #include "SideBar.hpp"
 
+void SideBar::initialize(float width, float height, float posX, float posY, const sf::Color& bgColor) {
+    background.setSize(sf::Vector2f(width, height));
+    background.setFillColor(bgColor);
+    background.setPosition(posX, posY);
+}
 
 void SideBar::render(sf::RenderWindow& window) {
     for (const auto& button : buttons) {

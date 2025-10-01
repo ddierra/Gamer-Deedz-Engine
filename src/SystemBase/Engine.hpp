@@ -1,3 +1,4 @@
+#pragma once
 #include <SFML/Graphics.hpp>
 #include "InputManager.hpp"
 #include "Entities/EntityManager.hpp"
@@ -6,6 +7,8 @@
 #include "SystemBase/MovementSystem.hpp"
 #include "Components/Transform.hpp"
 #include "Components/UserInput.hpp"
+#include <iostream>
+#include "SideBar.hpp"
 
 class Engine {
 public:

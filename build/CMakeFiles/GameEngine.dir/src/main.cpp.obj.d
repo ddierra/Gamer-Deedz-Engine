@@ -279,4 +279,10 @@ CMakeFiles/GameEngine.dir/src/Main.cpp.obj: \
  A:\Gamer-Deedz-Engine\src\SystemBase/MovementSystem.hpp \
  A:/Gamer-Deedz-Engine/src/SystemBase/Systems.hpp \
  A:/Gamer-Deedz-Engine/src/Components/Transform.hpp \
- A:\Gamer-Deedz-Engine\src\SystemBase/Engine.hpp
+ A:\Gamer-Deedz-Engine\src\SystemBase/Engine.hpp \
+ A:/Gamer-Deedz-Engine/src/SideBar.hpp \
+ A:/Gamer-Deedz-Engine/src/Button.hpp \
+ C:/msys64/mingw64/include/c++/14.2.0/functional \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
+ C:/msys64/mingw64/include/c++/14.2.0/array \
+ C:/msys64/mingw64/include/c++/14.2.0/compare
