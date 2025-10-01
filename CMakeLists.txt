@@ -13,6 +13,7 @@ add_executable(GameEngine
     src/InputManager.cpp
     src/Entities/EntityManager.cpp
     src/SystemBase/MovementSystem.cpp
+    src/SystemBase/Engine.cpp
 )
 
 # Add include path so #include "Entities/EntityManager.hpp" works anywhere

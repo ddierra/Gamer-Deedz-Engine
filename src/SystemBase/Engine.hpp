@@ -1,17 +1,13 @@
-#include "InputManager.hpp"
 #include <SFML/Graphics.hpp>
+#include "InputManager.hpp"
 #include "Entities/EntityManager.hpp"
-#include <iostream>
 #include "Components/Velocity.hpp"
 #include "Components/Position.hpp"
 #include "SystemBase/MovementSystem.hpp"
 #include "Components/Transform.hpp"
 #include "Components/UserInput.hpp"
-#include "SystemBase/Engine.hpp"
 
-
-int main() {
-    Engine engine;
-    engine.run();
-    return 0;
-}
+class Engine {
+public:
+    void run();
+};

@@ -200,6 +200,30 @@ src/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
+src/SystemBase/Engine.obj: src/SystemBase/Engine.cpp.obj
+.PHONY : src/SystemBase/Engine.obj
+
+# target to build an object file
+src/SystemBase/Engine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj
+.PHONY : src/SystemBase/Engine.cpp.obj
+
+src/SystemBase/Engine.i: src/SystemBase/Engine.cpp.i
+.PHONY : src/SystemBase/Engine.i
+
+# target to preprocess a source file
+src/SystemBase/Engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.i
+.PHONY : src/SystemBase/Engine.cpp.i
+
+src/SystemBase/Engine.s: src/SystemBase/Engine.cpp.s
+.PHONY : src/SystemBase/Engine.s
+
+# target to generate assembly for a file
+src/SystemBase/Engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.s
+.PHONY : src/SystemBase/Engine.cpp.s
+
 src/SystemBase/MovementSystem.obj: src/SystemBase/MovementSystem.cpp.obj
 .PHONY : src/SystemBase/MovementSystem.obj
 
@@ -242,6 +266,9 @@ help:
 	@echo ... src/Main.obj
 	@echo ... src/Main.i
 	@echo ... src/Main.s
+	@echo ... src/SystemBase/Engine.obj
+	@echo ... src/SystemBase/Engine.i
+	@echo ... src/SystemBase/Engine.s
 	@echo ... src/SystemBase/MovementSystem.obj
 	@echo ... src/SystemBase/MovementSystem.i
 	@echo ... src/SystemBase/MovementSystem.s

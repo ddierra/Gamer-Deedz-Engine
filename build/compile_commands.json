@@ -22,5 +22,11 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/GameEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\SystemBase\\MovementSystem.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\SystemBase\\MovementSystem.cpp",
   "file": "A:/Gamer-Deedz-Engine/src/SystemBase/MovementSystem.cpp",
   "output": "CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.obj"
+},
+{
+  "directory": "A:/Gamer-Deedz-Engine/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/GameEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\SystemBase\\Engine.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\SystemBase\\Engine.cpp",
+  "file": "A:/Gamer-Deedz-Engine/src/SystemBase/Engine.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj"
 }
 ]

@@ -1,6 +1,7 @@
-CMakeFiles/GameEngine.dir/src/Main.cpp.obj: \
- A:\Gamer-Deedz-Engine\src\Main.cpp \
- A:\Gamer-Deedz-Engine\src\InputManager.hpp \
+CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj: \
+ A:\Gamer-Deedz-Engine\src\SystemBase\Engine.cpp \
+ A:\Gamer-Deedz-Engine\src\SystemBase\Engine.hpp \
+ C:/msys64/mingw64/include/SFML/Graphics.hpp \
  C:/msys64/mingw64/include/SFML/Window.hpp \
  C:/msys64/mingw64/include/SFML/System.hpp \
  C:/msys64/mingw64/include/SFML/Config.hpp \
@@ -208,7 +209,6 @@ CMakeFiles/GameEngine.dir/src/Main.cpp.obj: \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
  C:/msys64/mingw64/include/stdint.h \
  C:/msys64/mingw64/include/SFML/Window/WindowStyle.hpp \
- C:/msys64/mingw64/include/SFML/Graphics.hpp \
  C:/msys64/mingw64/include/SFML/Graphics/BlendMode.hpp \
  C:/msys64/mingw64/include/SFML/Graphics/Export.hpp \
  C:/msys64/mingw64/include/SFML/Graphics/CircleShape.hpp \
@@ -246,13 +246,14 @@ CMakeFiles/GameEngine.dir/src/Main.cpp.obj: \
  C:/msys64/mingw64/include/SFML/Graphics/Sprite.hpp \
  C:/msys64/mingw64/include/SFML/Graphics/Text.hpp \
  C:/msys64/mingw64/include/SFML/Graphics/VertexBuffer.hpp \
+ A:/Gamer-Deedz-Engine/src/InputManager.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/utility \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_relops.h \
  C:/msys64/mingw64/include/c++/14.2.0/iostream \
  C:/msys64/mingw64/include/c++/14.2.0/istream \
  C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc \
- A:\Gamer-Deedz-Engine\src\Components/UserInput.hpp \
- A:\Gamer-Deedz-Engine\src\Entities/EntityManager.hpp \
+ A:/Gamer-Deedz-Engine/src/Components/UserInput.hpp \
+ A:/Gamer-Deedz-Engine/src/Entities/EntityManager.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/unordered_map \
  C:/msys64/mingw64/include/c++/14.2.0/bits/unordered_map.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable.h \
@@ -274,9 +275,8 @@ CMakeFiles/GameEngine.dir/src/Main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
  C:/msys64/mingw64/include/c++/14.2.0/cstdint \
  C:/msys64/mingw64/include/c++/14.2.0/any \
- A:\Gamer-Deedz-Engine\src\Components/Velocity.hpp \
- A:\Gamer-Deedz-Engine\src\Components/Position.hpp \
- A:\Gamer-Deedz-Engine\src\SystemBase/MovementSystem.hpp \
+ A:/Gamer-Deedz-Engine/src/Components/Velocity.hpp \
+ A:/Gamer-Deedz-Engine/src/Components/Position.hpp \
+ A:/Gamer-Deedz-Engine/src/SystemBase/MovementSystem.hpp \
  A:/Gamer-Deedz-Engine/src/SystemBase/Systems.hpp \
- A:/Gamer-Deedz-Engine/src/Components/Transform.hpp \
- A:\Gamer-Deedz-Engine\src\SystemBase/Engine.hpp
+ A:/Gamer-Deedz-Engine/src/Components/Transform.hpp

@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "A:/Gamer-Deedz-Engine/src/Entities/EntityManager.cpp" "CMakeFiles/GameEngine.dir/src/Entities/EntityManager.cpp.obj" "gcc" "CMakeFiles/GameEngine.dir/src/Entities/EntityManager.cpp.obj.d"
   "A:/Gamer-Deedz-Engine/src/InputManager.cpp" "CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj" "gcc" "CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj.d"
   "A:/Gamer-Deedz-Engine/src/Main.cpp" "CMakeFiles/GameEngine.dir/src/Main.cpp.obj" "gcc" "CMakeFiles/GameEngine.dir/src/Main.cpp.obj.d"
+  "A:/Gamer-Deedz-Engine/src/SystemBase/Engine.cpp" "CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj" "gcc" "CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj.d"
   "A:/Gamer-Deedz-Engine/src/SystemBase/MovementSystem.cpp" "CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.obj" "gcc" "CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.obj.d"
   )
 
