@@ -85,5 +85,5 @@ void Engine::run() {
         window.draw(rectangle);
         window.draw(circle);
         window.display();
-    }
+    } 
 }

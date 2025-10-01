@@ -128,6 +128,30 @@ GameEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/build
 .PHONY : GameEngine/fast
 
+src/Button.obj: src/Button.cpp.obj
+.PHONY : src/Button.obj
+
+# target to build an object file
+src/Button.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Button.cpp.obj
+.PHONY : src/Button.cpp.obj
+
+src/Button.i: src/Button.cpp.i
+.PHONY : src/Button.i
+
+# target to preprocess a source file
+src/Button.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Button.cpp.i
+.PHONY : src/Button.cpp.i
+
+src/Button.s: src/Button.cpp.s
+.PHONY : src/Button.s
+
+# target to generate assembly for a file
+src/Button.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Button.cpp.s
+.PHONY : src/Button.cpp.s
+
 src/Entities/EntityManager.obj: src/Entities/EntityManager.cpp.obj
 .PHONY : src/Entities/EntityManager.obj
 
@@ -200,6 +224,30 @@ src/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
+src/SideBar.obj: src/SideBar.cpp.obj
+.PHONY : src/SideBar.obj
+
+# target to build an object file
+src/SideBar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SideBar.cpp.obj
+.PHONY : src/SideBar.cpp.obj
+
+src/SideBar.i: src/SideBar.cpp.i
+.PHONY : src/SideBar.i
+
+# target to preprocess a source file
+src/SideBar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SideBar.cpp.i
+.PHONY : src/SideBar.cpp.i
+
+src/SideBar.s: src/SideBar.cpp.s
+.PHONY : src/SideBar.s
+
+# target to generate assembly for a file
+src/SideBar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SideBar.cpp.s
+.PHONY : src/SideBar.cpp.s
+
 src/SystemBase/Engine.obj: src/SystemBase/Engine.cpp.obj
 .PHONY : src/SystemBase/Engine.obj
 
@@ -257,6 +305,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... GameEngine
+	@echo ... src/Button.obj
+	@echo ... src/Button.i
+	@echo ... src/Button.s
 	@echo ... src/Entities/EntityManager.obj
 	@echo ... src/Entities/EntityManager.i
 	@echo ... src/Entities/EntityManager.s
@@ -266,6 +317,9 @@ help:
 	@echo ... src/Main.obj
 	@echo ... src/Main.i
 	@echo ... src/Main.s
+	@echo ... src/SideBar.obj
+	@echo ... src/SideBar.i
+	@echo ... src/SideBar.s
 	@echo ... src/SystemBase/Engine.obj
 	@echo ... src/SystemBase/Engine.i
 	@echo ... src/SystemBase/Engine.s
