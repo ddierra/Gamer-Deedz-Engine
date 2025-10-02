@@ -6,7 +6,24 @@ void Engine::run() {
     window.setFramerateLimit(60);
 
     sf::Font font;
-    if (!font.loadFromFile("assets/arial.ttf")) {
+    if (!font.loadFromFile("resources/fonts/arial.ttf")) {
+        std::cerr << "Failed to load font\n";
+    }
+
+    SideBar sidebar;
+    sidebar.initialize(150.f, 600.f, 0.f, 0.f, sf::Color(50, 50, 50));
+
+    Button helloBtn(
+        sf::Vector2f(150.f, 40.f),
+        sf::Vector2f(25.f, 20.f),
+        "Say Hello",
+        font, 
+        []() { std::cout << "Hello buton clicked!\n"; }
+    );
+
+    sidebar.addButton(helloBtn);
+
+
 
     InputManager input;
     EntityManager em;
@@ -81,6 +98,8 @@ void Engine::run() {
         window.clear(sf::Color::White);
         window.draw(rectangle);
         window.draw(circle);
+        window.draw(sidebar.background);
+        sidebar.render(window);
         window.display();
-    } 
+    }
 }
