@@ -5,9 +5,8 @@ void Engine::run() {
  sf::RenderWindow window(sf::VideoMode(800, 600), "Gamer Deedz Engine");
     window.setFramerateLimit(60);
 
-    SideBar sidebar;
-    sidebar.initialize(150.f, window.getSize().y, 0.f, 0.f, sf::Color::Blue);
-    sidebar.render(window);
+    sf::Font font;
+    if (!font.loadFromFile("assets/arial.ttf")) {
 
     InputManager input;
     EntityManager em;
@@ -80,7 +79,6 @@ void Engine::run() {
         circle.setPosition(circPos->x, circPos->y);
 
         window.clear(sf::Color::White);
-        window.draw(sidebar.background);
         window.draw(rectangle);
         window.draw(circle);
         window.display();

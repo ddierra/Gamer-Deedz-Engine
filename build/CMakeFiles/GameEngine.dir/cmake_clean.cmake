@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GameEngine.dir/src/Button.cpp.obj"
-  "CMakeFiles/GameEngine.dir/src/Button.cpp.obj.d"
   "CMakeFiles/GameEngine.dir/src/Entities/EntityManager.cpp.obj"
   "CMakeFiles/GameEngine.dir/src/Entities/EntityManager.cpp.obj.d"
   "CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj"

@@ -8,6 +8,7 @@
 class SideBar {
     public:
         std::vector<Button> buttons;
+        sf::Font font;
         void initialize(float width, float height, float posX, float posY, const sf::Color& bgColor);
         sf::RectangleShape background;
         void render(sf::RenderWindow& window);

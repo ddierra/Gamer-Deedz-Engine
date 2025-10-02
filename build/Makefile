@@ -128,30 +128,6 @@ GameEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/build
 .PHONY : GameEngine/fast
 
-src/Button.obj: src/Button.cpp.obj
-.PHONY : src/Button.obj
-
-# target to build an object file
-src/Button.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Button.cpp.obj
-.PHONY : src/Button.cpp.obj
-
-src/Button.i: src/Button.cpp.i
-.PHONY : src/Button.i
-
-# target to preprocess a source file
-src/Button.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Button.cpp.i
-.PHONY : src/Button.cpp.i
-
-src/Button.s: src/Button.cpp.s
-.PHONY : src/Button.s
-
-# target to generate assembly for a file
-src/Button.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Button.cpp.s
-.PHONY : src/Button.cpp.s
-
 src/Entities/EntityManager.obj: src/Entities/EntityManager.cpp.obj
 .PHONY : src/Entities/EntityManager.obj
 
@@ -305,9 +281,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... GameEngine
-	@echo ... src/Button.obj
-	@echo ... src/Button.i
-	@echo ... src/Button.s
 	@echo ... src/Entities/EntityManager.obj
 	@echo ... src/Entities/EntityManager.i
 	@echo ... src/Entities/EntityManager.s
