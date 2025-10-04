@@ -100,6 +100,7 @@ void Engine::run() {
         window.draw(circle);
         window.draw(sidebar.background);
         sidebar.render(window);
+        sidebar.handleInput(window);
         window.display();
     }
 }

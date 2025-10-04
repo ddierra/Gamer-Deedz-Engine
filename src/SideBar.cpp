@@ -19,22 +19,30 @@ void SideBar::addButton(const Button& button) {
 
     // stack vertically
     float yOffset = 10.f + (buttons.size() - 1) * (button.shape.getSize().y + 10.f);
-    buttons.back().shape.setPosition(background.getPosition().x + 10.f, background.getPosition().y + yOffset);
-    buttons.back().text.setPosition(
-        buttons.back().shape.getPosition().x + buttons.back().shape.getSize().x / 2.f,
-        buttons.back().shape.getPosition().y + buttons.back().shape.getSize().y / 2.f
-    );
-}
+    buttons.back().shape.setPosition(
+    background.getPosition().x + 5.f,
+    background.getPosition().y + yOffset
+);
+buttons.back().text.setPosition(
+    background.getPosition().x + 10.f + buttons.back().shape.getSize().x/2,
+    background.getPosition().y + yOffset + buttons.back().shape.getSize().y/2
+);
 
+}
+bool leftMouseWasPressed = false;
 void SideBar::handleInput(sf::RenderWindow& window) {
-    if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
+    bool leftPressed = sf::Mouse::isButtonPressed(sf::Mouse::Left);
         sf::Vector2i mousePos = sf::Mouse::getPosition(window);
-        for (auto& button : buttons) {
-            if (button.shape.getGlobalBounds().contains(static_cast<sf::Vector2f>(mousePos))) {
-                if (button.onClick) {
-                    button.onClick();
+
+        if (leftPressed && !leftMouseWasPressed) { // edge detection
+            for (auto& button : buttons) {
+                if (button.shape.getGlobalBounds().contains(static_cast<sf::Vector2f>(mousePos))) {
+                    if (button.onClick) {
+                        button.onClick();
+                    }
                 }
             }
         }
-    }
+
+        leftMouseWasPressed = leftPressed;
 }
