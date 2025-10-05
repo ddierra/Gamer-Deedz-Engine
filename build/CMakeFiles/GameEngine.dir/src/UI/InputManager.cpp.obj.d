@@ -1,6 +1,6 @@
-CMakeFiles/GameEngine.dir/src/Main.cpp.obj: \
- A:\Gamer-Deedz-Engine\src\Main.cpp \
- A:\Gamer-Deedz-Engine\src\UI/InputManager.hpp \
+CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.obj: \
+ A:\Gamer-Deedz-Engine\src\UI\InputManager.cpp \
+ A:\Gamer-Deedz-Engine\src\UI\InputManager.hpp \
  C:/msys64/mingw64/include/SFML/Window.hpp \
  C:/msys64/mingw64/include/SFML/System.hpp \
  C:/msys64/mingw64/include/SFML/Config.hpp \
@@ -274,16 +274,4 @@ CMakeFiles/GameEngine.dir/src/Main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
  C:/msys64/mingw64/include/c++/14.2.0/cstdint \
  C:/msys64/mingw64/include/c++/14.2.0/any \
- A:/Gamer-Deedz-Engine/src/Components/Velocity.hpp \
- A:\Gamer-Deedz-Engine\src\Components/Position.hpp \
- A:\Gamer-Deedz-Engine\src\SystemBase/MovementSystem.hpp \
- A:\Gamer-Deedz-Engine\src\SystemBase/Systems.hpp \
- A:/Gamer-Deedz-Engine/src/Components/Transform.hpp \
- A:\Gamer-Deedz-Engine\src\Engine.hpp \
- A:\Gamer-Deedz-Engine\src\UI/SideBar.hpp \
- A:\Gamer-Deedz-Engine\src\UI/Button.hpp \
- C:/msys64/mingw64/include/c++/14.2.0/functional \
- C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
- C:/msys64/mingw64/include/c++/14.2.0/array \
- C:/msys64/mingw64/include/c++/14.2.0/compare \
- A:\Gamer-Deedz-Engine\src\UI/ButtonDefinitions.hpp
+ A:/Gamer-Deedz-Engine/src/Components/Velocity.hpp

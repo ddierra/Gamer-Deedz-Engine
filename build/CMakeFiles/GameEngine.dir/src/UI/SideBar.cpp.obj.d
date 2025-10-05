@@ -1,6 +1,7 @@
-CMakeFiles/GameEngine.dir/src/Main.cpp.obj: \
- A:\Gamer-Deedz-Engine\src\Main.cpp \
- A:\Gamer-Deedz-Engine\src\UI/InputManager.hpp \
+CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.obj: \
+ A:\Gamer-Deedz-Engine\src\UI\SideBar.cpp \
+ A:\Gamer-Deedz-Engine\src\UI\SideBar.hpp \
+ C:/msys64/mingw64/include/SFML/Graphics.hpp \
  C:/msys64/mingw64/include/SFML/Window.hpp \
  C:/msys64/mingw64/include/SFML/System.hpp \
  C:/msys64/mingw64/include/SFML/Config.hpp \
@@ -208,7 +209,6 @@ CMakeFiles/GameEngine.dir/src/Main.cpp.obj: \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
  C:/msys64/mingw64/include/stdint.h \
  C:/msys64/mingw64/include/SFML/Window/WindowStyle.hpp \
- C:/msys64/mingw64/include/SFML/Graphics.hpp \
  C:/msys64/mingw64/include/SFML/Graphics/BlendMode.hpp \
  C:/msys64/mingw64/include/SFML/Graphics/Export.hpp \
  C:/msys64/mingw64/include/SFML/Graphics/CircleShape.hpp \
@@ -246,6 +246,7 @@ CMakeFiles/GameEngine.dir/src/Main.cpp.obj: \
  C:/msys64/mingw64/include/SFML/Graphics/Sprite.hpp \
  C:/msys64/mingw64/include/SFML/Graphics/Text.hpp \
  C:/msys64/mingw64/include/SFML/Graphics/VertexBuffer.hpp \
+ A:\Gamer-Deedz-Engine\src\UI\InputManager.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/utility \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_relops.h \
  C:/msys64/mingw64/include/c++/14.2.0/iostream \
@@ -275,15 +276,8 @@ CMakeFiles/GameEngine.dir/src/Main.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/cstdint \
  C:/msys64/mingw64/include/c++/14.2.0/any \
  A:/Gamer-Deedz-Engine/src/Components/Velocity.hpp \
- A:\Gamer-Deedz-Engine\src\Components/Position.hpp \
- A:\Gamer-Deedz-Engine\src\SystemBase/MovementSystem.hpp \
- A:\Gamer-Deedz-Engine\src\SystemBase/Systems.hpp \
- A:/Gamer-Deedz-Engine/src/Components/Transform.hpp \
- A:\Gamer-Deedz-Engine\src\Engine.hpp \
- A:\Gamer-Deedz-Engine\src\UI/SideBar.hpp \
- A:\Gamer-Deedz-Engine\src\UI/Button.hpp \
+ A:\Gamer-Deedz-Engine\src\UI\Button.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/functional \
  C:/msys64/mingw64/include/c++/14.2.0/bits/std_function.h \
  C:/msys64/mingw64/include/c++/14.2.0/array \
- C:/msys64/mingw64/include/c++/14.2.0/compare \
- A:\Gamer-Deedz-Engine\src\UI/ButtonDefinitions.hpp
+ C:/msys64/mingw64/include/c++/14.2.0/compare

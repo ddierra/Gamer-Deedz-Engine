@@ -1,5 +1,5 @@
 #pragma once
-#include "SystemBase/Systems.hpp"
+#include "Systems.hpp"
 #include "Entities/EntityManager.hpp"
 #include "Components/Position.hpp"
 #include "Components/Velocity.hpp"

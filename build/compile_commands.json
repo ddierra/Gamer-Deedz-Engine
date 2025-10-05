@@ -7,9 +7,9 @@
 },
 {
   "directory": "A:/Gamer-Deedz-Engine/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/GameEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\InputManager.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\InputManager.cpp",
-  "file": "A:/Gamer-Deedz-Engine/src/InputManager.cpp",
-  "output": "CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/GameEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\UI\\InputManager.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\UI\\InputManager.cpp",
+  "file": "A:/Gamer-Deedz-Engine/src/UI/InputManager.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.obj"
 },
 {
   "directory": "A:/Gamer-Deedz-Engine/build",
@@ -25,14 +25,20 @@
 },
 {
   "directory": "A:/Gamer-Deedz-Engine/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/GameEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\SystemBase\\Engine.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\SystemBase\\Engine.cpp",
-  "file": "A:/Gamer-Deedz-Engine/src/SystemBase/Engine.cpp",
-  "output": "CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/GameEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\Engine.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\Engine.cpp",
+  "file": "A:/Gamer-Deedz-Engine/src/Engine.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/Engine.cpp.obj"
 },
 {
   "directory": "A:/Gamer-Deedz-Engine/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/GameEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\SideBar.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\SideBar.cpp",
-  "file": "A:/Gamer-Deedz-Engine/src/SideBar.cpp",
-  "output": "CMakeFiles/GameEngine.dir/src/SideBar.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/GameEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\UI\\SideBar.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\UI\\SideBar.cpp",
+  "file": "A:/Gamer-Deedz-Engine/src/UI/SideBar.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.obj"
+},
+{
+  "directory": "A:/Gamer-Deedz-Engine/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/GameEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\UI\\ButtonDefinitions.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\UI\\ButtonDefinitions.cpp",
+  "file": "A:/Gamer-Deedz-Engine/src/UI/ButtonDefinitions.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.obj"
 }
 ]

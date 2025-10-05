@@ -10,7 +10,12 @@ using Entity = std::uint32_t;
 
 class EntityManager {
 public:
-    Entity createEntity();
+    std::vector<Entity> entities;
+    Entity createEntity(){
+        entities.emplace_back();
+        return entities.back();
+    }
+    
     void destroyEntity(Entity e);
 
     template<typename Component, typename... Args>

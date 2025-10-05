@@ -10,11 +10,12 @@ find_package(SFML 2.5 COMPONENTS system window graphics audio network REQUIRED)
 # Source files
 add_executable(GameEngine
     src/Main.cpp
-    src/InputManager.cpp
+    src/UI/InputManager.cpp
     src/Entities/EntityManager.cpp
     src/SystemBase/MovementSystem.cpp
-    src/SystemBase/Engine.cpp
-    src/SideBar.cpp
+    src/Engine.cpp
+    src/UI/SideBar.cpp
+    src/UI/ButtonDefinitions.cpp
 )
 
 # Add include path so #include "Entities/EntityManager.hpp" works anywhere

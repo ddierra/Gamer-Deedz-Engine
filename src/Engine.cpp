@@ -1,9 +1,25 @@
 #include "Engine.hpp"
 
+#include <SFML/Graphics.hpp>
+#include <random>
+#include <iostream>
+
+sf::Color getRandomColor() {
+    static std::random_device rd;
+    static std::mt19937 gen(rd());
+    static std::uniform_int_distribution<> dis(0, 255);
+
+    return sf::Color(dis(gen), dis(gen), dis(gen));
+}
+
+
 
 void Engine::run() {
  sf::RenderWindow window(sf::VideoMode(800, 600), "Gamer Deedz Engine");
     window.setFramerateLimit(60);
+
+    InputManager input;
+    EntityManager em;
 
     sf::Font font;
     if (!font.loadFromFile("resources/fonts/arial.ttf")) {
@@ -13,28 +29,21 @@ void Engine::run() {
     SideBar sidebar;
     sidebar.initialize(150.f, 600.f, 0.f, 0.f, sf::Color(50, 50, 50));
 
-    Button helloBtn(
-        sf::Vector2f(150.f, 40.f),
-        sf::Vector2f(25.f, 20.f),
-        "Say Hello",
-        font, 
-        []() { std::cout << "Hello buton clicked!\n"; }
-    );
+    // Create a rectangle entity
+    sidebar.addButton(ButtonDefinitions::SpawnRectangle(font, [&em](){
+        Entity rectangleEntity = em.createEntity();
+        em.addComponent<Position>(rectangleEntity, 200.f, 200.f);
+        em.addComponent<Velocity>(rectangleEntity, 0.f, 0.f);
+        em.addComponent<TransformComponent>(rectangleEntity);
 
-    sidebar.addButton(helloBtn);
-
-
-
-    InputManager input;
-    EntityManager em;
-
-    // Create entitiesmingw32
-    Entity rectangleEntity = em.createEntity();
-    em.addComponent<Position>(rectangleEntity, 200.f, 200.f);
-    em.addComponent<Velocity>(rectangleEntity, 0.f, 0.f);
-    em.addComponent<UserInput>(rectangleEntity);
-    em.addComponent<TransformComponent>(rectangleEntity);
-
+        sf::RectangleShape rectangle(sf::Vector2f(100.f, 50.f));
+        rectangle.setFillColor(getRandomColor());
+        std::cout << "Spawned Rectangle Entity ID: " << rectangleEntity << "\n";
+        std::cout << "Random color RGB: "
+                    << (int)rectangle.getFillColor().r << ", "
+                    << (int)rectangle.getFillColor().g << ", "
+                    << (int)rectangle.getFillColor().b << "\n";
+    }));
 
     Entity circleEntity = em.createEntity();
     em.addComponent<Position>(circleEntity, 400.f, 300.f);
@@ -44,23 +53,18 @@ void Engine::run() {
     
 
    // Get references to Position components
-    auto rectPos = em.getComponent<Position>(rectangleEntity);
     auto circPos = em.getComponent<Position>(circleEntity);
 
     // Create shapes
-    sf::RectangleShape rectangle(sf::Vector2f(100.f, 50.f));
-    rectangle.setFillColor(sf::Color::Yellow);
 
     sf::CircleShape circle(50.f);
     circle.setFillColor(sf::Color::Blue);
 
     // Input manager and movement system
     InputManager inputMgr;
-    inputMgr.addEntity(rectangleEntity);
     inputMgr.addEntity(circleEntity);
 
     MovementSystem movementSys;
-    movementSys.addEntity(rectangleEntity);
     movementSys.addEntity(circleEntity);
 
    float userSpeed = 0.25f; // Movement speed
@@ -78,13 +82,6 @@ void Engine::run() {
         inputMgr.update(em, window, UserInput{});
         movementSys.update(em, dt);
 
-        
-        // Move rectangle with WASD
-        if (input.isKeyPressed(sf::Keyboard::A)) rectPos->x -= 0.25f;
-        if (input.isKeyPressed(sf::Keyboard::D)) rectPos->x += 0.25f;
-        if (input.isKeyPressed(sf::Keyboard::W)) rectPos->y -= 0.25f;
-        if (input.isKeyPressed(sf::Keyboard::S)) rectPos->y += 0.25f;
-
         // Move circle with arrow keys
         if (input.isKeyPressed(sf::Keyboard::Left)) circPos->x -= 0.25f;
         if (input.isKeyPressed(sf::Keyboard::Right)) circPos->x += 0.25f;
@@ -92,11 +89,9 @@ void Engine::run() {
         if (input.isKeyPressed(sf::Keyboard::Down)) circPos->y += 0.25f;
 
         // Sync shapes with ECS positions
-        rectangle.setPosition(rectPos->x, rectPos->y);
         circle.setPosition(circPos->x, circPos->y);
 
         window.clear(sf::Color::White);
-        window.draw(rectangle);
         window.draw(circle);
         window.draw(sidebar.background);
         sidebar.render(window);

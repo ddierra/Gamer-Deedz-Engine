@@ -128,6 +128,30 @@ GameEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/build
 .PHONY : GameEngine/fast
 
+src/Engine.obj: src/Engine.cpp.obj
+.PHONY : src/Engine.obj
+
+# target to build an object file
+src/Engine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Engine.cpp.obj
+.PHONY : src/Engine.cpp.obj
+
+src/Engine.i: src/Engine.cpp.i
+.PHONY : src/Engine.i
+
+# target to preprocess a source file
+src/Engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Engine.cpp.i
+.PHONY : src/Engine.cpp.i
+
+src/Engine.s: src/Engine.cpp.s
+.PHONY : src/Engine.s
+
+# target to generate assembly for a file
+src/Engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Engine.cpp.s
+.PHONY : src/Engine.cpp.s
+
 src/Entities/EntityManager.obj: src/Entities/EntityManager.cpp.obj
 .PHONY : src/Entities/EntityManager.obj
 
@@ -151,30 +175,6 @@ src/Entities/EntityManager.s: src/Entities/EntityManager.cpp.s
 src/Entities/EntityManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Entities/EntityManager.cpp.s
 .PHONY : src/Entities/EntityManager.cpp.s
-
-src/InputManager.obj: src/InputManager.cpp.obj
-.PHONY : src/InputManager.obj
-
-# target to build an object file
-src/InputManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj
-.PHONY : src/InputManager.cpp.obj
-
-src/InputManager.i: src/InputManager.cpp.i
-.PHONY : src/InputManager.i
-
-# target to preprocess a source file
-src/InputManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/InputManager.cpp.i
-.PHONY : src/InputManager.cpp.i
-
-src/InputManager.s: src/InputManager.cpp.s
-.PHONY : src/InputManager.s
-
-# target to generate assembly for a file
-src/InputManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/InputManager.cpp.s
-.PHONY : src/InputManager.cpp.s
 
 src/Main.obj: src/Main.cpp.obj
 .PHONY : src/Main.obj
@@ -200,54 +200,6 @@ src/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
-src/SideBar.obj: src/SideBar.cpp.obj
-.PHONY : src/SideBar.obj
-
-# target to build an object file
-src/SideBar.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SideBar.cpp.obj
-.PHONY : src/SideBar.cpp.obj
-
-src/SideBar.i: src/SideBar.cpp.i
-.PHONY : src/SideBar.i
-
-# target to preprocess a source file
-src/SideBar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SideBar.cpp.i
-.PHONY : src/SideBar.cpp.i
-
-src/SideBar.s: src/SideBar.cpp.s
-.PHONY : src/SideBar.s
-
-# target to generate assembly for a file
-src/SideBar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SideBar.cpp.s
-.PHONY : src/SideBar.cpp.s
-
-src/SystemBase/Engine.obj: src/SystemBase/Engine.cpp.obj
-.PHONY : src/SystemBase/Engine.obj
-
-# target to build an object file
-src/SystemBase/Engine.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj
-.PHONY : src/SystemBase/Engine.cpp.obj
-
-src/SystemBase/Engine.i: src/SystemBase/Engine.cpp.i
-.PHONY : src/SystemBase/Engine.i
-
-# target to preprocess a source file
-src/SystemBase/Engine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.i
-.PHONY : src/SystemBase/Engine.cpp.i
-
-src/SystemBase/Engine.s: src/SystemBase/Engine.cpp.s
-.PHONY : src/SystemBase/Engine.s
-
-# target to generate assembly for a file
-src/SystemBase/Engine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.s
-.PHONY : src/SystemBase/Engine.cpp.s
-
 src/SystemBase/MovementSystem.obj: src/SystemBase/MovementSystem.cpp.obj
 .PHONY : src/SystemBase/MovementSystem.obj
 
@@ -272,6 +224,78 @@ src/SystemBase/MovementSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.s
 .PHONY : src/SystemBase/MovementSystem.cpp.s
 
+src/UI/ButtonDefinitions.obj: src/UI/ButtonDefinitions.cpp.obj
+.PHONY : src/UI/ButtonDefinitions.obj
+
+# target to build an object file
+src/UI/ButtonDefinitions.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.obj
+.PHONY : src/UI/ButtonDefinitions.cpp.obj
+
+src/UI/ButtonDefinitions.i: src/UI/ButtonDefinitions.cpp.i
+.PHONY : src/UI/ButtonDefinitions.i
+
+# target to preprocess a source file
+src/UI/ButtonDefinitions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.i
+.PHONY : src/UI/ButtonDefinitions.cpp.i
+
+src/UI/ButtonDefinitions.s: src/UI/ButtonDefinitions.cpp.s
+.PHONY : src/UI/ButtonDefinitions.s
+
+# target to generate assembly for a file
+src/UI/ButtonDefinitions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.s
+.PHONY : src/UI/ButtonDefinitions.cpp.s
+
+src/UI/InputManager.obj: src/UI/InputManager.cpp.obj
+.PHONY : src/UI/InputManager.obj
+
+# target to build an object file
+src/UI/InputManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.obj
+.PHONY : src/UI/InputManager.cpp.obj
+
+src/UI/InputManager.i: src/UI/InputManager.cpp.i
+.PHONY : src/UI/InputManager.i
+
+# target to preprocess a source file
+src/UI/InputManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.i
+.PHONY : src/UI/InputManager.cpp.i
+
+src/UI/InputManager.s: src/UI/InputManager.cpp.s
+.PHONY : src/UI/InputManager.s
+
+# target to generate assembly for a file
+src/UI/InputManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.s
+.PHONY : src/UI/InputManager.cpp.s
+
+src/UI/SideBar.obj: src/UI/SideBar.cpp.obj
+.PHONY : src/UI/SideBar.obj
+
+# target to build an object file
+src/UI/SideBar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.obj
+.PHONY : src/UI/SideBar.cpp.obj
+
+src/UI/SideBar.i: src/UI/SideBar.cpp.i
+.PHONY : src/UI/SideBar.i
+
+# target to preprocess a source file
+src/UI/SideBar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.i
+.PHONY : src/UI/SideBar.cpp.i
+
+src/UI/SideBar.s: src/UI/SideBar.cpp.s
+.PHONY : src/UI/SideBar.s
+
+# target to generate assembly for a file
+src/UI/SideBar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.s
+.PHONY : src/UI/SideBar.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -281,24 +305,27 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... GameEngine
+	@echo ... src/Engine.obj
+	@echo ... src/Engine.i
+	@echo ... src/Engine.s
 	@echo ... src/Entities/EntityManager.obj
 	@echo ... src/Entities/EntityManager.i
 	@echo ... src/Entities/EntityManager.s
-	@echo ... src/InputManager.obj
-	@echo ... src/InputManager.i
-	@echo ... src/InputManager.s
 	@echo ... src/Main.obj
 	@echo ... src/Main.i
 	@echo ... src/Main.s
-	@echo ... src/SideBar.obj
-	@echo ... src/SideBar.i
-	@echo ... src/SideBar.s
-	@echo ... src/SystemBase/Engine.obj
-	@echo ... src/SystemBase/Engine.i
-	@echo ... src/SystemBase/Engine.s
 	@echo ... src/SystemBase/MovementSystem.obj
 	@echo ... src/SystemBase/MovementSystem.i
 	@echo ... src/SystemBase/MovementSystem.s
+	@echo ... src/UI/ButtonDefinitions.obj
+	@echo ... src/UI/ButtonDefinitions.i
+	@echo ... src/UI/ButtonDefinitions.s
+	@echo ... src/UI/InputManager.obj
+	@echo ... src/UI/InputManager.i
+	@echo ... src/UI/InputManager.s
+	@echo ... src/UI/SideBar.obj
+	@echo ... src/UI/SideBar.i
+	@echo ... src/UI/SideBar.s
 .PHONY : help
 
 

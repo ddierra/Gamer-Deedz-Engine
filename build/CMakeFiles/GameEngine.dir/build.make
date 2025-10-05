@@ -86,20 +86,20 @@ CMakeFiles/GameEngine.dir/src/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/Main.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S A:\Gamer-Deedz-Engine\src\Main.cpp -o CMakeFiles\GameEngine.dir\src\Main.cpp.s
 
-CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj: CMakeFiles/GameEngine.dir/includes_CXX.rsp
-CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj: A:/Gamer-Deedz-Engine/src/InputManager.cpp
-CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=A:\Gamer-Deedz-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj -MF CMakeFiles\GameEngine.dir\src\InputManager.cpp.obj.d -o CMakeFiles\GameEngine.dir\src\InputManager.cpp.obj -c A:\Gamer-Deedz-Engine\src\InputManager.cpp
+CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.obj: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.obj: CMakeFiles/GameEngine.dir/includes_CXX.rsp
+CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.obj: A:/Gamer-Deedz-Engine/src/UI/InputManager.cpp
+CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.obj: CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=A:\Gamer-Deedz-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.obj -MF CMakeFiles\GameEngine.dir\src\UI\InputManager.cpp.obj.d -o CMakeFiles\GameEngine.dir\src\UI\InputManager.cpp.obj -c A:\Gamer-Deedz-Engine\src\UI\InputManager.cpp
 
-CMakeFiles/GameEngine.dir/src/InputManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/InputManager.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E A:\Gamer-Deedz-Engine\src\InputManager.cpp > CMakeFiles\GameEngine.dir\src\InputManager.cpp.i
+CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E A:\Gamer-Deedz-Engine\src\UI\InputManager.cpp > CMakeFiles\GameEngine.dir\src\UI\InputManager.cpp.i
 
-CMakeFiles/GameEngine.dir/src/InputManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/InputManager.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S A:\Gamer-Deedz-Engine\src\InputManager.cpp -o CMakeFiles\GameEngine.dir\src\InputManager.cpp.s
+CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S A:\Gamer-Deedz-Engine\src\UI\InputManager.cpp -o CMakeFiles\GameEngine.dir\src\UI\InputManager.cpp.s
 
 CMakeFiles/GameEngine.dir/src/Entities/EntityManager.cpp.obj: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/src/Entities/EntityManager.cpp.obj: CMakeFiles/GameEngine.dir/includes_CXX.rsp
@@ -131,54 +131,71 @@ CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S A:\Gamer-Deedz-Engine\src\SystemBase\MovementSystem.cpp -o CMakeFiles\GameEngine.dir\src\SystemBase\MovementSystem.cpp.s
 
-CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj: CMakeFiles/GameEngine.dir/includes_CXX.rsp
-CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj: A:/Gamer-Deedz-Engine/src/SystemBase/Engine.cpp
-CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=A:\Gamer-Deedz-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj -MF CMakeFiles\GameEngine.dir\src\SystemBase\Engine.cpp.obj.d -o CMakeFiles\GameEngine.dir\src\SystemBase\Engine.cpp.obj -c A:\Gamer-Deedz-Engine\src\SystemBase\Engine.cpp
+CMakeFiles/GameEngine.dir/src/Engine.cpp.obj: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/src/Engine.cpp.obj: CMakeFiles/GameEngine.dir/includes_CXX.rsp
+CMakeFiles/GameEngine.dir/src/Engine.cpp.obj: A:/Gamer-Deedz-Engine/src/Engine.cpp
+CMakeFiles/GameEngine.dir/src/Engine.cpp.obj: CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=A:\Gamer-Deedz-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GameEngine.dir/src/Engine.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/Engine.cpp.obj -MF CMakeFiles\GameEngine.dir\src\Engine.cpp.obj.d -o CMakeFiles\GameEngine.dir\src\Engine.cpp.obj -c A:\Gamer-Deedz-Engine\src\Engine.cpp
 
-CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E A:\Gamer-Deedz-Engine\src\SystemBase\Engine.cpp > CMakeFiles\GameEngine.dir\src\SystemBase\Engine.cpp.i
+CMakeFiles/GameEngine.dir/src/Engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/Engine.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E A:\Gamer-Deedz-Engine\src\Engine.cpp > CMakeFiles\GameEngine.dir\src\Engine.cpp.i
 
-CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S A:\Gamer-Deedz-Engine\src\SystemBase\Engine.cpp -o CMakeFiles\GameEngine.dir\src\SystemBase\Engine.cpp.s
+CMakeFiles/GameEngine.dir/src/Engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/Engine.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S A:\Gamer-Deedz-Engine\src\Engine.cpp -o CMakeFiles\GameEngine.dir\src\Engine.cpp.s
 
-CMakeFiles/GameEngine.dir/src/SideBar.cpp.obj: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/src/SideBar.cpp.obj: CMakeFiles/GameEngine.dir/includes_CXX.rsp
-CMakeFiles/GameEngine.dir/src/SideBar.cpp.obj: A:/Gamer-Deedz-Engine/src/SideBar.cpp
-CMakeFiles/GameEngine.dir/src/SideBar.cpp.obj: CMakeFiles/GameEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=A:\Gamer-Deedz-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GameEngine.dir/src/SideBar.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/SideBar.cpp.obj -MF CMakeFiles\GameEngine.dir\src\SideBar.cpp.obj.d -o CMakeFiles\GameEngine.dir\src\SideBar.cpp.obj -c A:\Gamer-Deedz-Engine\src\SideBar.cpp
+CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.obj: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.obj: CMakeFiles/GameEngine.dir/includes_CXX.rsp
+CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.obj: A:/Gamer-Deedz-Engine/src/UI/SideBar.cpp
+CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.obj: CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=A:\Gamer-Deedz-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.obj -MF CMakeFiles\GameEngine.dir\src\UI\SideBar.cpp.obj.d -o CMakeFiles\GameEngine.dir\src\UI\SideBar.cpp.obj -c A:\Gamer-Deedz-Engine\src\UI\SideBar.cpp
 
-CMakeFiles/GameEngine.dir/src/SideBar.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/SideBar.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E A:\Gamer-Deedz-Engine\src\SideBar.cpp > CMakeFiles\GameEngine.dir\src\SideBar.cpp.i
+CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E A:\Gamer-Deedz-Engine\src\UI\SideBar.cpp > CMakeFiles\GameEngine.dir\src\UI\SideBar.cpp.i
 
-CMakeFiles/GameEngine.dir/src/SideBar.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/SideBar.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S A:\Gamer-Deedz-Engine\src\SideBar.cpp -o CMakeFiles\GameEngine.dir\src\SideBar.cpp.s
+CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S A:\Gamer-Deedz-Engine\src\UI\SideBar.cpp -o CMakeFiles\GameEngine.dir\src\UI\SideBar.cpp.s
+
+CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.obj: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.obj: CMakeFiles/GameEngine.dir/includes_CXX.rsp
+CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.obj: A:/Gamer-Deedz-Engine/src/UI/ButtonDefinitions.cpp
+CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.obj: CMakeFiles/GameEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=A:\Gamer-Deedz-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.obj -MF CMakeFiles\GameEngine.dir\src\UI\ButtonDefinitions.cpp.obj.d -o CMakeFiles\GameEngine.dir\src\UI\ButtonDefinitions.cpp.obj -c A:\Gamer-Deedz-Engine\src\UI\ButtonDefinitions.cpp
+
+CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E A:\Gamer-Deedz-Engine\src\UI\ButtonDefinitions.cpp > CMakeFiles\GameEngine.dir\src\UI\ButtonDefinitions.cpp.i
+
+CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S A:\Gamer-Deedz-Engine\src\UI\ButtonDefinitions.cpp -o CMakeFiles\GameEngine.dir\src\UI\ButtonDefinitions.cpp.s
 
 # Object files for target GameEngine
 GameEngine_OBJECTS = \
 "CMakeFiles/GameEngine.dir/src/Main.cpp.obj" \
-"CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj" \
+"CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.obj" \
 "CMakeFiles/GameEngine.dir/src/Entities/EntityManager.cpp.obj" \
 "CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.obj" \
-"CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj" \
-"CMakeFiles/GameEngine.dir/src/SideBar.cpp.obj"
+"CMakeFiles/GameEngine.dir/src/Engine.cpp.obj" \
+"CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.obj" \
+"CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.obj"
 
 # External object files for target GameEngine
 GameEngine_EXTERNAL_OBJECTS =
 
 GameEngine.exe: CMakeFiles/GameEngine.dir/src/Main.cpp.obj
-GameEngine.exe: CMakeFiles/GameEngine.dir/src/InputManager.cpp.obj
+GameEngine.exe: CMakeFiles/GameEngine.dir/src/UI/InputManager.cpp.obj
 GameEngine.exe: CMakeFiles/GameEngine.dir/src/Entities/EntityManager.cpp.obj
 GameEngine.exe: CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.obj
-GameEngine.exe: CMakeFiles/GameEngine.dir/src/SystemBase/Engine.cpp.obj
-GameEngine.exe: CMakeFiles/GameEngine.dir/src/SideBar.cpp.obj
+GameEngine.exe: CMakeFiles/GameEngine.dir/src/Engine.cpp.obj
+GameEngine.exe: CMakeFiles/GameEngine.dir/src/UI/SideBar.cpp.obj
+GameEngine.exe: CMakeFiles/GameEngine.dir/src/UI/ButtonDefinitions.cpp.obj
 GameEngine.exe: CMakeFiles/GameEngine.dir/build.make
 GameEngine.exe: C:/msys64/mingw64/lib/libsfml-graphics.dll.a
 GameEngine.exe: C:/msys64/mingw64/lib/libsfml-audio.dll.a
@@ -188,7 +205,7 @@ GameEngine.exe: C:/msys64/mingw64/lib/libsfml-system.dll.a
 GameEngine.exe: CMakeFiles/GameEngine.dir/linkLibs.rsp
 GameEngine.exe: CMakeFiles/GameEngine.dir/objects1.rsp
 GameEngine.exe: CMakeFiles/GameEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=A:\Gamer-Deedz-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable GameEngine.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=A:\Gamer-Deedz-Engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable GameEngine.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GameEngine.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

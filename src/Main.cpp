@@ -1,4 +1,4 @@
-#include "InputManager.hpp"
+#include "UI/InputManager.hpp"
 #include <SFML/Graphics.hpp>
 #include "Entities/EntityManager.hpp"
 #include <iostream>
@@ -7,7 +7,7 @@
 #include "SystemBase/MovementSystem.hpp"
 #include "Components/Transform.hpp"
 #include "Components/UserInput.hpp"
-#include "SystemBase/Engine.hpp"
+#include "Engine.hpp"
 
 
 int main() {
