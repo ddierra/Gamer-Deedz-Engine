@@ -30,7 +30,7 @@ void Engine::run() {
     sidebar.initialize(150.f, 600.f, 0.f, 0.f, sf::Color(50, 50, 50));
 
     // Create a rectangle entity
-    sidebar.addButton(ButtonDefinitions::SpawnRectangle(font, [&em](){
+    sidebar.addButton(ButtonDefinitions::SpawnRectangle(font, "Add Rectangle", [&em](){
         Entity rectangleEntity = em.createEntity();
         em.addComponent<Position>(rectangleEntity, 200.f, 200.f);
         em.addComponent<Velocity>(rectangleEntity, 0.f, 0.f);
