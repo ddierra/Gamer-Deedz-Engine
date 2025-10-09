@@ -48,27 +48,28 @@ void Engine::run() {
         renderSys.addEntity(rectangleEntity, rectangle);
     }));
 
-    Entity circleEntity = em.createEntity();
-    em.addComponent<Position>(circleEntity, 400.f, 300.f);
-    em.addComponent<Velocity>(circleEntity, 0.f, 0.f);
-    em.addComponent<UserInput>(circleEntity);
-    em.addComponent<TransformComponent>(circleEntity);
-    
+    // Create a circle entity
+    sidebar.addButton(ButtonDefinitions::SpawnCircle(font, "Add Circle", [&em, &renderSys](){
+        Entity circleEntity = em.createEntity();
+        em.addComponent<Position>(circleEntity, 400.f, 300.f);
+        em.addComponent<Velocity>(circleEntity, 0.f, 0.f);
+        em.addComponent<TransformComponent>(circleEntity);
 
-   // Get references to Position components
-    auto circPos = em.getComponent<Position>(circleEntity);
+        auto circle = std::make_shared<sf::CircleShape>(40.f);
+        circle->setFillColor(getRandomColor());
+        circle->setPosition(400.f, 300.f);
+        std::cout << "Spawned Circle Entity ID: " << circleEntity << "\n";
+        std::cout << "Random color RGB: "
+                    << (int)circle->getFillColor().r << ", "
+                    << (int)circle->getFillColor().g << ", "
+                    << (int)circle->getFillColor().b << "\n";
 
-    // Create shapes
-
-    sf::CircleShape circle(50.f);
-    circle.setFillColor(sf::Color::Blue);
+        renderSys.addEntity(circleEntity, circle);
+    }));
 
     // Input manager and movement system
     InputManager inputMgr;
-    inputMgr.addEntity(circleEntity);
-
     MovementSystem movementSys;
-    movementSys.addEntity(circleEntity);
 
    float userSpeed = 0.25f; // Movement speed
 
@@ -85,17 +86,7 @@ void Engine::run() {
         inputMgr.update(em, window, UserInput{});
         movementSys.update(em, dt);
 
-        // Move circle with arrow keys
-        if (input.isKeyPressed(sf::Keyboard::Left)) circPos->x -= 0.25f;
-        if (input.isKeyPressed(sf::Keyboard::Right)) circPos->x += 0.25f;
-        if (input.isKeyPressed(sf::Keyboard::Up)) circPos->y -= 0.25f;
-        if (input.isKeyPressed(sf::Keyboard::Down)) circPos->y += 0.25f;
-
-        // Sync shapes with ECS positions
-        circle.setPosition(circPos->x, circPos->y);
-
         window.clear(sf::Color::White);
-        window.draw(circle);
         sidebar.render(window);
         sidebar.handleInput(window);
         renderSys.update(window);
