@@ -13,7 +13,7 @@ A custom-built C++ game engine using SFML for rendering and entity-component-sys
 - Sidebar UI with buttons (in progress)
 - Extendable for rendering and physics
 
-![GIF of game engine with moving blue circle and yellow rectangle](CurrentEngineGIF.gif)
+![GIF of game engine with moving blue circle and sidebar](CurrentEngineGIF.gif)
 
 ## Installation
 1. Clone repo:
