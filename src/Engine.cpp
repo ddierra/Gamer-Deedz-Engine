@@ -1,5 +1,4 @@
 #include "Engine.hpp"
-
 #include <SFML/Graphics.hpp>
 #include <random>
 #include <iostream>
@@ -20,6 +19,7 @@ void Engine::run() {
 
     InputManager input;
     EntityManager em;
+    RenderSystem renderSys;
 
     sf::Font font;
     if (!font.loadFromFile("resources/fonts/arial.ttf")) {
@@ -30,19 +30,22 @@ void Engine::run() {
     sidebar.initialize(150.f, 600.f, 0.f, 0.f, sf::Color(50, 50, 50));
 
     // Create a rectangle entity
-    sidebar.addButton(ButtonDefinitions::SpawnRectangle(font, "Add Rectangle", [&em](){
+    sidebar.addButton(ButtonDefinitions::SpawnRectangle(font, "Add Rectangle", [&em, &renderSys](){
         Entity rectangleEntity = em.createEntity();
         em.addComponent<Position>(rectangleEntity, 200.f, 200.f);
         em.addComponent<Velocity>(rectangleEntity, 0.f, 0.f);
         em.addComponent<TransformComponent>(rectangleEntity);
 
-        sf::RectangleShape rectangle(sf::Vector2f(100.f, 50.f));
-        rectangle.setFillColor(getRandomColor());
+        auto rectangle = std::make_shared<sf::RectangleShape>(sf::Vector2f(100.f, 50.f));
+        rectangle->setFillColor(getRandomColor());
+        rectangle->setPosition(200.f, 200.f);
         std::cout << "Spawned Rectangle Entity ID: " << rectangleEntity << "\n";
         std::cout << "Random color RGB: "
-                    << (int)rectangle.getFillColor().r << ", "
-                    << (int)rectangle.getFillColor().g << ", "
-                    << (int)rectangle.getFillColor().b << "\n";
+                    << (int)rectangle->getFillColor().r << ", "
+                    << (int)rectangle->getFillColor().g << ", "
+                    << (int)rectangle->getFillColor().b << "\n";
+
+        renderSys.addEntity(rectangleEntity, rectangle);
     }));
 
     Entity circleEntity = em.createEntity();
@@ -93,9 +96,9 @@ void Engine::run() {
 
         window.clear(sf::Color::White);
         window.draw(circle);
-        window.draw(sidebar.background);
         sidebar.render(window);
         sidebar.handleInput(window);
+        renderSys.update(window);
         window.display();
     }
 }

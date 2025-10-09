@@ -11,6 +11,7 @@
 #include "UI/SideBar.hpp"
 #include "UI/Button.hpp"
 #include "UI/ButtonDefinitions.hpp"
+#include "SystemBase/RenderSystem.hpp"
 
 class Engine {
 public:

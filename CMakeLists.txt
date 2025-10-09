@@ -16,6 +16,7 @@ add_executable(GameEngine
     src/Engine.cpp
     src/UI/SideBar.cpp
     src/UI/ButtonDefinitions.cpp
+    src/SystemBase/RenderSystem.cpp
 )
 
 # Add include path so #include "Entities/EntityManager.hpp" works anywhere

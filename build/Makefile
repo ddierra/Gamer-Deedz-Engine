@@ -224,6 +224,30 @@ src/SystemBase/MovementSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.s
 .PHONY : src/SystemBase/MovementSystem.cpp.s
 
+src/SystemBase/RenderSystem.obj: src/SystemBase/RenderSystem.cpp.obj
+.PHONY : src/SystemBase/RenderSystem.obj
+
+# target to build an object file
+src/SystemBase/RenderSystem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/RenderSystem.cpp.obj
+.PHONY : src/SystemBase/RenderSystem.cpp.obj
+
+src/SystemBase/RenderSystem.i: src/SystemBase/RenderSystem.cpp.i
+.PHONY : src/SystemBase/RenderSystem.i
+
+# target to preprocess a source file
+src/SystemBase/RenderSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/RenderSystem.cpp.i
+.PHONY : src/SystemBase/RenderSystem.cpp.i
+
+src/SystemBase/RenderSystem.s: src/SystemBase/RenderSystem.cpp.s
+.PHONY : src/SystemBase/RenderSystem.s
+
+# target to generate assembly for a file
+src/SystemBase/RenderSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/RenderSystem.cpp.s
+.PHONY : src/SystemBase/RenderSystem.cpp.s
+
 src/UI/ButtonDefinitions.obj: src/UI/ButtonDefinitions.cpp.obj
 .PHONY : src/UI/ButtonDefinitions.obj
 
@@ -317,6 +341,9 @@ help:
 	@echo ... src/SystemBase/MovementSystem.obj
 	@echo ... src/SystemBase/MovementSystem.i
 	@echo ... src/SystemBase/MovementSystem.s
+	@echo ... src/SystemBase/RenderSystem.obj
+	@echo ... src/SystemBase/RenderSystem.i
+	@echo ... src/SystemBase/RenderSystem.s
 	@echo ... src/UI/ButtonDefinitions.obj
 	@echo ... src/UI/ButtonDefinitions.i
 	@echo ... src/UI/ButtonDefinitions.s
