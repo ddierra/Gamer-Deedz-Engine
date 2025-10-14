@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GameEngine.dir/src/Entities/EntityManager.cpp.obj.d"
   "CMakeFiles/GameEngine.dir/src/Main.cpp.obj"
   "CMakeFiles/GameEngine.dir/src/Main.cpp.obj.d"
+  "CMakeFiles/GameEngine.dir/src/SystemBase/ColorSystem.cpp.obj"
+  "CMakeFiles/GameEngine.dir/src/SystemBase/ColorSystem.cpp.obj.d"
   "CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.obj"
   "CMakeFiles/GameEngine.dir/src/SystemBase/MovementSystem.cpp.obj.d"
   "CMakeFiles/GameEngine.dir/src/SystemBase/RenderSystem.cpp.obj"

@@ -46,5 +46,11 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/GameEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\SystemBase\\RenderSystem.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\SystemBase\\RenderSystem.cpp",
   "file": "A:/Gamer-Deedz-Engine/src/SystemBase/RenderSystem.cpp",
   "output": "CMakeFiles/GameEngine.dir/src/SystemBase/RenderSystem.cpp.obj"
+},
+{
+  "directory": "A:/Gamer-Deedz-Engine/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/GameEngine.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GameEngine.dir\\src\\SystemBase\\ColorSystem.cpp.obj -c A:\\Gamer-Deedz-Engine\\src\\SystemBase\\ColorSystem.cpp",
+  "file": "A:/Gamer-Deedz-Engine/src/SystemBase/ColorSystem.cpp",
+  "output": "CMakeFiles/GameEngine.dir/src/SystemBase/ColorSystem.cpp.obj"
 }
 ]

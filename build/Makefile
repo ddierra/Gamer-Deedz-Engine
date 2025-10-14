@@ -200,6 +200,30 @@ src/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
+src/SystemBase/ColorSystem.obj: src/SystemBase/ColorSystem.cpp.obj
+.PHONY : src/SystemBase/ColorSystem.obj
+
+# target to build an object file
+src/SystemBase/ColorSystem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/ColorSystem.cpp.obj
+.PHONY : src/SystemBase/ColorSystem.cpp.obj
+
+src/SystemBase/ColorSystem.i: src/SystemBase/ColorSystem.cpp.i
+.PHONY : src/SystemBase/ColorSystem.i
+
+# target to preprocess a source file
+src/SystemBase/ColorSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/ColorSystem.cpp.i
+.PHONY : src/SystemBase/ColorSystem.cpp.i
+
+src/SystemBase/ColorSystem.s: src/SystemBase/ColorSystem.cpp.s
+.PHONY : src/SystemBase/ColorSystem.s
+
+# target to generate assembly for a file
+src/SystemBase/ColorSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GameEngine.dir\build.make CMakeFiles/GameEngine.dir/src/SystemBase/ColorSystem.cpp.s
+.PHONY : src/SystemBase/ColorSystem.cpp.s
+
 src/SystemBase/MovementSystem.obj: src/SystemBase/MovementSystem.cpp.obj
 .PHONY : src/SystemBase/MovementSystem.obj
 
@@ -338,6 +362,9 @@ help:
 	@echo ... src/Main.obj
 	@echo ... src/Main.i
 	@echo ... src/Main.s
+	@echo ... src/SystemBase/ColorSystem.obj
+	@echo ... src/SystemBase/ColorSystem.i
+	@echo ... src/SystemBase/ColorSystem.s
 	@echo ... src/SystemBase/MovementSystem.obj
 	@echo ... src/SystemBase/MovementSystem.i
 	@echo ... src/SystemBase/MovementSystem.s
