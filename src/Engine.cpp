@@ -67,6 +67,15 @@ void Engine::run() {
         renderSys.addEntity(circleEntity, circle);
     }));
 
+    Entity userEntity = em.createEntity();
+    em.addComponent<Position>(userEntity, 300.f, 500.f);
+    em.addComponent<Velocity>(userEntity, 0.f, 0.f);
+    em.addComponent<TransformComponent>(userEntity);
+    auto userEN = std::make_shared<sf::CircleShape>(20.f);
+    userEN->setFillColor(sf::Color::Blue);
+    userEN->setPosition(300.f, 500.f);
+
+
     // Input manager and movement system
     InputManager inputMgr;
     MovementSystem movementSys;
@@ -86,10 +95,11 @@ void Engine::run() {
         inputMgr.update(em, window, UserInput{});
         movementSys.update(em, dt);
 
-        window.clear(sf::Color::White);
-        sidebar.render(window);
         sidebar.handleInput(window);
-        renderSys.update(window);
+        window.clear(sf::Color::White);
+        window.draw(*userEN);
+        renderSys.update(window, em);
+        sidebar.render(window);
         window.display();
     }
 }

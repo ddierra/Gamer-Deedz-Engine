@@ -267,4 +267,5 @@ CMakeFiles/GameEngine.dir/src/SystemBase/RenderSystem.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/backward/auto_ptr.h \
  C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
  C:/msys64/mingw64/include/c++/14.2.0/cstdint \
- C:/msys64/mingw64/include/c++/14.2.0/any
+ C:/msys64/mingw64/include/c++/14.2.0/any \
+ A:/Gamer-Deedz-Engine/src/Components/Position.hpp
