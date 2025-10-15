@@ -24,7 +24,7 @@ namespace ButtonDefinitions{
 
     Button ChangeColor(const sf::Font& font, std::function<void()> onClick){
         return Button(
-            sf::Vector2f(100.f, 20.f),
+            sf::Vector2f(120.f, 40.f),
             sf::Vector2f(10.f, 100.f),
             "Change Color",
             font,
