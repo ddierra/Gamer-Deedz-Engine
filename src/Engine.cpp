@@ -30,7 +30,7 @@ void Engine::run() {
     sidebar.initialize(150.f, 600.f, 0.f, 0.f, sf::Color(50, 50, 50));
 
     // Create a rectangle entity
-    sidebar.addButton(ButtonDefinitions::SpawnRectangle(font, "Add Rectangle", [&em, &renderSys](){
+    sidebar.addButton(ButtonDefinitions::SpawnRectangle(font, [&em, &renderSys](){
         Entity rectangleEntity = em.createEntity();
         em.addComponent<Position>(rectangleEntity, 200.f, 200.f);
         em.addComponent<Velocity>(rectangleEntity, 0.f, 0.f);
@@ -49,7 +49,7 @@ void Engine::run() {
     }));
 
     // Create a circle entity
-    sidebar.addButton(ButtonDefinitions::SpawnCircle(font, "Add Circle", [&em, &renderSys](){
+    sidebar.addButton(ButtonDefinitions::SpawnCircle(font, [&em, &renderSys](){
         Entity circleEntity = em.createEntity();
         em.addComponent<Position>(circleEntity, 400.f, 300.f);
         em.addComponent<Velocity>(circleEntity, 0.f, 0.f);
@@ -65,6 +65,12 @@ void Engine::run() {
                     << (int)circle->getFillColor().b << "\n";
 
         renderSys.addEntity(circleEntity, circle);
+    }));
+
+    //Change Color of entities
+    ColorSystem colorSys;
+    sidebar.addButton(ButtonDefinitions::ChangeColor(font, [&em, &colorSys]() {
+        colorSys.pickColor(em);
     }));
 
     Entity userEntity = em.createEntity();

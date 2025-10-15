@@ -4,8 +4,9 @@
 #include <functional>
 
 namespace ButtonDefinitions{
-    Button SpawnRectangle(const sf::Font& font, const sf::String& label, std::function<void()> onClick);
-    Button SpawnCircle(const sf::Font& font, const sf::String& label, std::function<void()> onClick);
+    Button SpawnRectangle(const sf::Font& font, std::function<void()> onClick);
+    Button SpawnCircle(const sf::Font& font, std::function<void()> onClick);
+    Button ChangeColor(const sf::Font& font, std::function<void()> onclick);
     Button AddComponent(const sf::Font font, std::function<void()> onClick);
     Button RemoveComponent(const sf::Font font, std::function<void()> onClick);
     Button DeleteEntity(const sf::Font font, std::function<void()> onClick);

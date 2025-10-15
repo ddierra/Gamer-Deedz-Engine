@@ -7,8 +7,3 @@ struct Color{
     Color(const sf::Color& color = sf::Color::White)
         : fillColor(color){}
 };
-
-class Color{
-    public:
-        sf::Color color;
-};

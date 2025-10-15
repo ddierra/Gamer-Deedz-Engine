@@ -6,7 +6,7 @@ for (auto& [entity, shape] : renderMap) {
         shape->setPosition(pos->x, pos->y);
     }
     if(em.hasComponent<Color>(entity)){
-        auto& color = em.getComponent<Color>(entity)->color;
+        auto& color = em.getComponent<Color>(entity)->fillColor;
         shape->setFillColor(color);
     }
     window.draw(*shape);

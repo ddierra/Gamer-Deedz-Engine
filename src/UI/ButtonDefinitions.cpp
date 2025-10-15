@@ -2,7 +2,7 @@
 
 namespace ButtonDefinitions{
     
-    Button SpawnRectangle(const sf::Font& font, const sf::String& label, std::function<void()> onClick){
+    Button SpawnRectangle(const sf::Font& font, std::function<void()> onClick){
         return Button(
             sf::Vector2f(120.f, 40.f),
             sf::Vector2f(10.f, 10.f),
@@ -12,7 +12,7 @@ namespace ButtonDefinitions{
             );
         }
 
-    Button SpawnCircle(const sf::Font& font, const sf::String& label, std::function<void()> onClick){
+    Button SpawnCircle(const sf::Font& font, std::function<void()> onClick){
         return Button(
             sf::Vector2f(120.f, 40.f),
             sf::Vector2f(10.f, 60.f),
@@ -21,6 +21,16 @@ namespace ButtonDefinitions{
             onClick
             );
         }
+
+    Button ChangeColor(const sf::Font& font, std::function<void()> onClick){
+        return Button(
+            sf::Vector2f(100.f, 20.f),
+            sf::Vector2f(10.f, 100.f),
+            "Change Color",
+            font,
+            onClick
+        );
+    }
 
     Button AddComponent(const sf::Font font, std::function<void()> onClick){
         return Button(

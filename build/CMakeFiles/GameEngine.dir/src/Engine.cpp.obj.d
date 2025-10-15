@@ -288,6 +288,8 @@ CMakeFiles/GameEngine.dir/src/Engine.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/compare \
  A:\Gamer-Deedz-Engine\src\UI/ButtonDefinitions.hpp \
  A:\Gamer-Deedz-Engine\src\SystemBase/RenderSystem.hpp \
+ A:/Gamer-Deedz-Engine/src/Components/Color.hpp \
+ A:\Gamer-Deedz-Engine\src\SystemBase/ColorSystem.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/random \
  C:/msys64/mingw64/include/c++/14.2.0/cmath \
  C:/msys64/mingw64/include/math.h \

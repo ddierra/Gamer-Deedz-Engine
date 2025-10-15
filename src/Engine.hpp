@@ -12,6 +12,8 @@
 #include "UI/Button.hpp"
 #include "UI/ButtonDefinitions.hpp"
 #include "SystemBase/RenderSystem.hpp"
+#include "SystemBase/ColorSystem.hpp"
+#include <functional>
 
 class Engine {
 public:
