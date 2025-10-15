@@ -5,6 +5,10 @@ for (auto& [entity, shape] : renderMap) {
     if (auto pos = em.getComponent<Position>(entity)) {
         shape->setPosition(pos->x, pos->y);
     }
+    if(em.hasComponent<Color>(entity)){
+        auto& color = em.getComponent<Color>(entity)->color;
+        shape->setFillColor(color);
+    }
     window.draw(*shape);
 }
 

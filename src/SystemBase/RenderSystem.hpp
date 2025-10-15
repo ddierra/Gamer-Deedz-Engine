@@ -3,6 +3,7 @@
 #include "Entities/EntityManager.hpp"
 #include <unordered_map>
 #include "Components/Position.hpp"
+#include "Components/Color.hpp"
 
 class RenderSystem{
 public:
