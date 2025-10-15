@@ -8,3 +8,7 @@ struct Color{
         : fillColor(color){}
 };
 
+class Color{
+    public:
+        sf::Color color;
+};
